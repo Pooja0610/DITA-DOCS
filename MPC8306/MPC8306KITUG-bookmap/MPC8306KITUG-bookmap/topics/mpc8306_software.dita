@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_y4g_3qq_c4b">
+  <title><b>MPC8306KIT Software</b></title>
+  <body>
+    <p>A board support package (BSP) is pre-installed on the MPC8306_KIT. This BSP consists of a
+      boot loader (u-boot), a generic PowerPC Linux-based system, and an associated file system.
+      U-boot, the Linux kernel, and the file system reside in the on-board Flash memory. At power
+      up, the Linux system runs on the MPC8306_KIT.</p>
+    <p>The MPC8306KIT BSP generation takes advantage of a tool called theLinux target image builder
+      (LTIB). LTIB is a suite of tools that leverages existing open source configuration scripts and
+      source code packages and bundles them into a single BSP-generation package. The source code
+      packages include boot loaders and Linux kernel sources as well as many user-space source code
+      packages to build a complete BSP. LTIB also provides compiler packages required to build the
+      BSP. Freescale developers use LTIB to create BSPs</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page42"><b>History</b></p>
+    <p>for a multitude of Freescale development targets. LTIB leverages as many BSP elements as
+      possible for all Freescale-supported targets, and it offers the flexibility to customize
+      components that require platform-specific modifications.</p>
+    <p>The MPC8306KIT BSP release package contains a file named
+      ltib-mpc830xsom-&lt;yyyymmdd&gt;.iso. This file is an ISO image that can be burned to a CD-ROM
+      or mounted directly from your hard disk. Note that &lt;yyyymmdd&gt; is the release creation
+      date. The LTIB installation script that installs all necessary packages on a host Linux PC and
+      allows you to modify the BSP and packages within the BSP is in the ISO image.</p>
+    <p>This ISO image contains a file called README that describes how to generate and install the
+      BSP on the MPC8306KIT hardware platform. README contains the latest information for each BSP
+      release. To rebuild the BSP package or to add application software, carefully follow the
+      instructions <xref href="required_reading.dita"/> This file contains details on how to build,
+      run, and install the BSP.It guides the user to achieve a successful re-installation of the BSP
+      on the MPC8306_KIT. This ISO image contains the following documents:</p>
+    <ul id="ul_mdq_rqq_c4b">
+      <li>MPC8306-KIT User_Guide.pdf</li>
+      <li>FREESCALE_MPC8306_SOM.pdf and FREESCALE</li>
+    </ul>
+    <p>For more information on the MPC8306KIT, visit the Freescale web site. To run demonstrations
+      or to acquire details of Freescale third-party applications for this MPC8306KIT, contact your
+      local Freescale sales office.</p>
+    <p/>
+  </body>
+</topic>

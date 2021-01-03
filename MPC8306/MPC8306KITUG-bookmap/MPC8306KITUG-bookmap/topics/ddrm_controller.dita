@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_yvm_5jk_c4b">
+  <title>DDR2 SDRAM Controller</title>
+  <body>
+    <p>The MPC8306 processor uses DDR2 SDRAM as the system memory. The DDR2 interface uses the SSTL2
+      driver/receiver and 1.8 V power. A Vref 1.8V/2 is needed for all SSTL2 receivers in the DDR2
+      interface. Since DDR2 SDRAM chip operates at 1.8 V and uses SSTL2 interface, it will directly
+      interface with the MPC8306 without any level translation. The 1.8 V interface supply is
+      provided by an on-board voltage regulator. VREF, which is half the interface voltage (0.9 V),
+      is provided by a voltage divider of the 1.8 V for voltage tracking. SOM board willbe
+      configured to run DDR2 memory @ Max 133MHz, that is, DATA RATE 266 MHz. The following figure
+      shows the DDR2 SDRAM connection.</p>
+    <p><image href="../MPC8306KITUG_files/image26.jpeg" height="190" width="423" alt="???"
+        id="image_nxt_5jk_c4b"/></p>
+  </body>
+</topic>

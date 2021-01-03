@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_jxt_nz4_24b">
+  <title>Reuse Topics Using Author Mode Editor</title>
+  <body>
+    <ol id="ol_nxb_wz4_24b">
+      <li><xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-pathfinder-documents.html#eppo-pathfinder-documents__opening_a_dita_map"
+          format="html" scope="external">Open the DITA map</xref> in the Author mode editor.</li>
+      <li>Add a reference to an existing topic by dragging it from the <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/using-the-project-view.html#using-the-project-view"
+          format="html" scope="external">Project view</xref> (or the file system) and dropping it in
+        the desired location in the DITA map opened in Author mode. You can also accomplish the same
+        thing by using the Copy and Paste contextual menu actions.</li>
+      <li>If your topic uses a <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-background-keys.html#eppo-background-keys"
+          format="html" scope="external">key reference</xref>, set up the appropriate <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/insert-define-keys.html#insert-define-keys"
+          format="html" scope="external">key definition in your map</xref>.</li>
+      <li>If you want to define relationships between topics, other than those defined in the topics
+        themselves, you can <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-relationship-table-linking.html"
+          format="html" scope="external">add a relationship table to your map</xref>.</li>
+      <li>When you have finished adding topics, check that your map is complete and that all topic
+        links and keys resolve correctly. To do this <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-map-validate.html"
+          format="html" scope="external">validation, click the Validate and Check for Completeness
+          action</xref> on the toolbar in the DITA Maps Manager.</li>
+    </ol>
+  </body>
+</topic>

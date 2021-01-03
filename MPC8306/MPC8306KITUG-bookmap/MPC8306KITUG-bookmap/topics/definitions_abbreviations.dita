@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_b5y_jz3_c4b">
+  <title>Definitions, Acronyms, and Abbreviations</title>
+  <body>
+    <table id="table_rtj_kz3_c4b">
+      <title>Definitions, Acronymns, and Abbreviations</title>
+      <tgroup cols="2">
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <thead>
+          <row>
+            <entry align="center" valign="bottom">Abbreviations</entry>
+            <entry valign="bottom">Description</entry>
+          </row>
+        </thead>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>SOM</p>
+            </entry>
+            <entry valign="bottom">
+              <p>System on module</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>PCB</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Printed circuit board</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>BSP</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Board support package</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>POR</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Power on reset</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>GPCM</p>
+            </entry>
+            <entry valign="bottom">
+              <p>General-purpose chip-select machine</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>FCM</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Flash control machine</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>MDIO</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Management data Input/Output</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>COP</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Common on-chip processor</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>RCWLR</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reset configuration word low register</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>RCWHR</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reset configuration word high register</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>LTIB</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Linux target image builder</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>USB</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Universal serial bus</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>                                 FEC</p>
+            </entry>
+            <entry>Fast Ethernet controller</entry>
+          </row>
+          <row>
+            <entry>                                UART</entry>
+            <entry>Universal asynchronous receiver/transmitter</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

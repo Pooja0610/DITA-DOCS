@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_h43_fcq_c4b">
+  <title>FEC3 Interface</title>
+  <body>
+    <p>FEC3 port of MPC8306 is connected to an external PHY KSZ8001 on carrier card over MII
+      interface and terminated to an RJ-45 connector as shown in <xref
+        href="reset_configurations.dita#topic_a3z_tfk_c4b/fig_yfl_sqx_c4b"/>. This provides
+      additional network port</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p><b>Board Level Functions</b></p>
+    <p>Connectivity on carrier card. FEC3 MII port of MPC8306 is multiplexed with IEEE 1588 signals,
+      so 12-bit mux/demux IC is used on carrier card for interface selection. By default, MII
+      interface is selected. MII signals travel through board-to-board connector on carrier card.
+      The MDIO module controls PHY configuration and status monitoring.</p>
+    <p>
+      <fig id="fig_dq1_wrx_c4b">
+        <title>FEC3 Interface Block Diagram</title>
+        <image href="../MPC8306KITUG_files/image52.jpeg" height="174" width="464" alt="???"
+          id="image_rwn_fcq_c4b"/>
+      </fig>
+    </p>
+    <p><b>NOTE</b></p>
+    <p>Insert SOM card properly on carrier card. Improper insertion of SOM card can result in
+      Ethernet connectivity issue on FEC2 and FEC3.</p>
+  </body>
+</topic>

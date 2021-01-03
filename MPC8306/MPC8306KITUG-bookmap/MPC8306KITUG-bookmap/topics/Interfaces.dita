@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_s5n_clk_c4b">
+  <title>Interfaces</title>
+  <body>
+    <p>The MPC8306 has two I<sup>2</sup>C interfaces: I<sup>2</sup>C1 and I<sup>2</sup>C2. All
+        I<sup>2</sup>C lines are pulled up with a 4.7-K resister.</p>
+    <p></p>
+  </body>
+</topic>

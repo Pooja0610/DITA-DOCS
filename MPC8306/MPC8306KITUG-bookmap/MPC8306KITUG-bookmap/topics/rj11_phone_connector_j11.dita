@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_k2b_b3q_c4b">
+  <title><b>RJ-11 (Phone) Connector J11</b></title>
+  <body>
+    <p>A six-pin RJ-11 is provided on carrier card to terminate the signal from SLIC line interface
+      IC Si3201 to connect external PSTN phone.</p>
+    <p><b>Table 13. RJ-11 Connector Pin Assignment</b></p>
+    <table id="table_oxg_b3q_c4b" colsep="1" rowsep="1">
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <tbody valign="top">
+          <row>
+            <entry align="center" valign="bottom">
+              <p><b>Pin #</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Pin #</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>NC-1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>TIP</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>NC-2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>5</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>NC-3</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>3</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>RING</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>6</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>NC-4</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page29"><b>Connectors, Switches, and LEDs</b></p>
+  </body>
+</topic>

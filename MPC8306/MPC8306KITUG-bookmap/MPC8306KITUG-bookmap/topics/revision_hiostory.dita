@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap
+  PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+  <title>MPC8306 Reference Manual</title>
+  <bookmeta>
+    <author>Windows User</author>
+    <critdates>
+      <created date="2020-12-25T10:07:00Z"/>
+      <revised modified="2020-12-25T10:07:00Z"/>
+    </critdates>
+  </bookmeta>
+  <frontmatter>
+    <notices href="notices.dita"/>
+    <booklists>
+      <toc/>
+      <figurelist/>
+      <abbrevlist/>
+    </booklists>
+  </frontmatter>
+  <chapter href="d0e1.dita"/>
+  <chapter href="required_reading.dita"/>
+  <chapter href="definitions_abbreviations.dita"/>
+  <chapter href="mpc8306kit_hardware.dita">
+    <topicref href="features_mpc_hardware.dita"/>
+    <topicref href="Specifications_kit_hardware.dita"/>
+    <topicref href="mechanical%20data.dita"/>
+  </chapter>
+  <chapter href="board_level_functions.dita">
+    <topicref href="reset_configurations.dita"/>
+    <topicref href="external%20interrupts.dita"/>
+    <topicref href="clock_distribution.dita"/>
+    <topicref href="ddrm_controller.dita"/>
+    <topicref href="local_bus_controller.dita">
+      <topicref href="flash)memomry_interface.dita"/>
+      <topicref href="nand_flash_memory_interface.dita"/>
+      <topicref href="ds2155_parallel_port_interface.dita"/>
+    </topicref>
+    <topicref href="Interfaces.dita">
+      <topicref href="c1_interface.dita"/>
+      <topicref href="interface%202.dita"/>
+    </topicref>
+    <topicref href="spi_interface.dita"/>
+    <topicref href="micro_sd_interface.dita"/>
+    <topicref href="usb_interface.dita"/>
+    <topicref href="base_t_interface.dita">
+      <topicref href="feci_interface.dita"/>
+      <topicref href="fec2_interface.dita"/>
+      <topicref href="fec3_interface.dita"/>
+    </topicref>
+    <topicref href="duart_interface.dita"/>
+    <topicref href="flex_can_author.dita"/>
+    <topicref href="tdm_interface.dita">
+      <topicref href="t1_e1_clock_change.dita"/>
+    </topicref>
+    <topicref href="cop_jtag_port.dita"/>
+  </chapter>
+  <chapter href="connectors_switches_leds.dita">
+    <topicref href="som_board_connectors.dita">
+      <topicref href="cop_jtag_connector.dita"/>
+      <topicref href="background_debug_connector_ka2.dita"/>
+      <topicref href="micro_sd_card_controller.dita"/>
+      <topicref href="customized_rs232_connector.dita"/>
+      <topicref href="ethernet_connector.dita"/>
+      <topicref href="nand_nor_chip_select_header.dita"/>
+    </topicref>
+    <topicref href="carrier_board_connectors.dita">
+      <topicref href="dual_uart_connector_j7.dita"/>
+      <topicref href="can_header_j10.dita"/>
+      <topicref href="rj11_phone_connector_j11.dita"/>
+      <topicref href="t1_e1_connector_j5.dita"/>
+      <topicref href="fec_3_ethernet_connector_j9.dita"/>
+      <topicref href="ethernet_connector_j4.dita"/>
+      <topicref href="ieee_1588_connector_j16_optional.dita"/>
+      <topicref href="gpio_spi_header_j17.dita"/>
+      <topicref href="local_bus_connector_j15.dita"/>
+    </topicref>
+  </chapter>
+  <chapter href="mpc8306_kit_board_configuration.dita">
+    <topicref href="reset_configuration_word.dita"/>
+    <topicref href="power_supply.dita">
+      <topicref href="mp8306kit_power_supply.dita"/>
+    </topicref>
+    <topicref href="chip_select_assignments_memory_map.dita"/>
+  </chapter>
+  <chapter href="getting_started.dita">
+    <topicref href="board_jumping_settings.dita">
+      <topicref href="8306som_jumper_settings.dita"/>
+      <topicref href="mp8306kit_topview.dita"/>
+    </topicref>
+    <topicref href="external_cable_connection.dita">
+      <topicref href="mp8306kit_som_carrier_external_cable_connection.dita"/>
+      <topicref href="mp8306_som_stand_alone_external_cable_connection.dita"/>
+    </topicref>
+    <topicref href="serial_port_configuration_pc.dita"/>
+    <topicref href="power_up.dita"/>
+  </chapter>
+  <chapter href="mpc8306_software.dita"/>
+  <chapter href="document_revision_history.dita"/>
+  <chapter href="Reach_us.dita"/>
+</bookmap>

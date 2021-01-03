@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_v3d_qkq_c4b">
+  <title><b>Ethernet Connector (J4)</b></title>
+  <body>
+    <p>A four-port (2x2) Ethernet connector (J4) is provided on the carrier card for Ethernet
+      connectivity through FEC-2 (5-port Ethernet switch).</p>
+  </body>
+</topic>

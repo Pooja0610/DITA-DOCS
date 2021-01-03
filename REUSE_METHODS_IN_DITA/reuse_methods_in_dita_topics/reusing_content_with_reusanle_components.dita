@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_inm_xpw_24b">
+  <title>Reusing Content with Reusable Components</title>
+  <body>
+    <p>DITA allows you to select content in a topic, create a <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-reusable-components.html"
+        format="html" scope="external">reusable component</xref> from it and reference that
+      component in other locations. Each reusable component is created as a separate file. Anytime
+      the content needs to be edited, you only need to update it in the component file and all the
+      locations in your topics that reference it will also be updated. This can help you to maintain
+      continuity and accuracy throughout your documents.</p>
+    <p/>
+  </body>
+</topic>

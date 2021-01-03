@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_kkh_3yw_24b">
+  <title>Remove Content Reference</title>
+  <body>
+    <p>Removes the content reference (@conref or @conkeyref) inside the element at the cursor
+      position.</p>
+  </body>
+</topic>

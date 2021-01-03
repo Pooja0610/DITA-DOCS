@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_anl_rfq_c4b">
+  <title><b>COP/JTAG Connector</b></title>
+  <body>
+    <p>JTAG connector J1 allows user toconnect COP/JTAG–based emulator to MPC8306 for debugging.
+      Pinout detail of the COP/JTAG connector is mentioned in the following table.</p>
+    <p><b>Table 8. JTAG Connector Pin Assignment</b></p>
+    <table id="table_hpq_rfq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom">
+              <p><b>Pin #</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Signal</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Pin #</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Signal</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>TDO</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+            <entry valign="bottom">
+              <p>KEY1</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>3</p>
+            </entry>
+            <entry valign="bottom">
+              <p>TDI</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+            <entry valign="bottom">
+              <p>TRST#</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>5</p>
+            </entry>
+            <entry valign="bottom">
+              <p>QREQ#</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>6</p>
+            </entry>
+            <entry valign="bottom">
+              <p>VDD_SENSE</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>7</p>
+            </entry>
+            <entry valign="bottom">
+              <p>TCK</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CHKSTP_IN#</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>9</p>
+            </entry>
+            <entry valign="bottom">
+              <p>TMS</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>10</p>
+            </entry>
+            <entry valign="bottom">
+              <p>NC1</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>11</p>
+            </entry>
+            <entry valign="bottom">
+              <p>SRESET#</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>12</p>
+            </entry>
+            <entry valign="bottom">
+              <p>NC2</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>13</p>
+            </entry>
+            <entry valign="bottom">
+              <p>HRESET#</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>14</p>
+            </entry>
+            <entry valign="bottom">
+              <p>KEY2</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>15</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CHKSTP_OUT#</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>16</p>
+            </entry>
+            <entry valign="bottom">
+              <p>GND</p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

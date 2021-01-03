@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_z4b_vkk_c4b">
+  <title>DS2155 Parallel Port Interface</title>
+  <body>
+    <p>T1/E1 transceiver (DS2155) is having an 8-bit parallel port interface for configuration
+      purpose. DS2155 parallel port is interfaced with MPC8306 local bus controller in GPCM mode as
+      shown in the following figure. DS2155 is interfaced on CS2# of MPC8306.</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page13"><b>Board Level Functions</b></p>
+    <p><image href="../MPC8306KITUG_files/image33.jpeg" height="180" width="445" alt="???"
+        id="image_mkh_vkk_c4b"/></p>
+    <p><b>Figure 10. External Cable Connection for the Stand-alone SOM Boot Mode</b></p>
+  </body>
+</topic>

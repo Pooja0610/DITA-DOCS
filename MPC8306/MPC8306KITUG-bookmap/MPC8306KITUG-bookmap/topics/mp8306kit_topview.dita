@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_zz3_cpq_c4b">
+  <title><b>MPC8306KIT Top View</b></title>
+  <body>
+    <p>The following figure shows top view of MPC8306KIT (SOM + Carrier) with Pin-1 marked for each
+      reference. The jumper setting for MPC8306KIT is same as SOM stand-alone.</p>
+    <p><image href="../MPC8306KITUG_files/image109.jpeg" height="340" width="465" alt="???"
+        id="image_oym_cpq_c4b"/></p>
+    <p><b>Figure 38. MPC8306KIT Top View</b></p>
+    <p></p>
+  </body>
+</topic>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_bp2_k4q_c4b">
+  <title><b>Getting Started</b></title>
+  <body>
+    <p>This section describes how to boot the MPC8306 SOM stand-alone and MPC8306 SOM with carrier
+      (MPC8306KIT). Before powering up the board, verify that all the on-board jumpers are set to
+      the defaults according to the settings listed in “Board Jumper Settings,” and make all
+      external connections as described in “External Cable Connection.”</p>
+  </body>
+</topic>

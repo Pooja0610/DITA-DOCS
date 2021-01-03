@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ixs_dbq_c4b">
+  <title>Micro SD Card Interface</title>
+  <body>
+    <p>MPC8306 has on-chip SD card controller (eSDHC controller), which provides glueless interface
+      to removable memory storage interfaces such as SDIO and MMC. The SD card can transfer data up
+      to maximum of 33.25 MHz clock speed. The card insertion detect and the write protect signals
+      of connector are mechanical switched signals. These signals are connected to MPC8306
+      GPIO/WP.</p>
+    <p><image href="../MPC8306KITUG_files/image42.jpeg" height="160" width="440" alt="???"
+        id="image_kyy_dbq_c4b"/></p>
+    <p><b>Figure 14. SD Card Interface Block Diagram</b></p>
+    <p><b>NOTE</b></p>
+    <p>Power-down board/system while inserting and removing SD card.</p>
+    <p></p>
+  </body>
+</topic>

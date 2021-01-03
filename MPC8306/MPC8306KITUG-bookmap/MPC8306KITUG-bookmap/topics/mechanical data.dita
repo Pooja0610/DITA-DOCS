@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_kyj_k2k_c4b">
+  <title>Mechanical Data</title>
+  <body>
+    <p>The following figure shows MPC8306LIT dimensions in mm. The MPC8306X carrier board measures
+      170 mm x 170 mm and MPC8306SOM board measures 90 mm x 70 mm.</p>
+    <p><image href="../MPC8306KITUG_files/image14.jpeg" height="415" width="451" alt="???"
+        id="image_urj_m2k_c4b"/></p>
+    <p><b>Figure 3. MPC8306KIT dimension</b></p>
+    <p><b>4 Board Level Functions</b></p>
+    <p>The board-level functions includes reset, external interrupts, clock distribution, DDR SDRAM
+      controller, local bus controller, I<sup>2</sup>C interfaces, SD memory card interface,
+      FEC-1/2/3 interface, CAN interface, RS-232, RS-485, KA2 microcontroller, COP/JTAG interface
+      and USB interface.</p>
+  </body>
+</topic>

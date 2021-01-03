@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_v3x_zjk_c4b">
+  <title>Local Bus Controller</title>
+  <body>
+    <p>The MPC8306 local bus controller has multiplexed address and data lines LAD[0:15] and
+      non-multiplexed address lines LA[16:25]. Thus, address latch and data buffer need to be used
+      to interface standard memory devices for non-multiplexed address and data bus.</p>
+    <p>The following modules are connected to the local bus of MPC8306:</p>
+    <ul id="ul_wn2_1kk_c4b">
+      <li>8 MByte NOR Flash memory</li>
+      <li>512 MByte NAND flash memory</li>
+      <li>T1/E1 framer local bus interface</li>
+      <li>Local bus signals are terminated in a 60-pin connector on carrier card for future
+        expansion</li>
+    </ul>
+  </body>
+</topic>

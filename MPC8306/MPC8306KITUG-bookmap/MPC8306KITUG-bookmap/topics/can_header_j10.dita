@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_rjz_5hq_c4b">
+  <title><b>CAN Header J10</b></title>
+  <body>
+    <p>A four-pin header (J10) is provided for terminating CAN signal on carrier card as shown in
+      the following figure.</p>
+    <p><image href="../MPC8306KITUG_files/image79.jpeg" height="75" width="156" alt="???"
+        id="image_e4d_vhq_c4b"/></p>
+    <p><b>Figure 30. CAN Header</b></p>
+    <p><b>Table 12. CAN Header Pin Assignment</b></p>
+    <table id="table_m4d_vhq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="3">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <tbody valign="top">
+          <row>
+            <entry align="center" valign="bottom">
+              <p><b>Pin #</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>CANH</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CAN High</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>CANL</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CAN Low</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>3</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>GND</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Ground</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>NC</p>
+            </entry>
+            <entry valign="bottom">
+              <p>No Connect</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p></p>
+  </body>
+</topic>

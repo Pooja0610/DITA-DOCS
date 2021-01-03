@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_e5b_llq_c4b">
+  <title><b>Local Bus Connector (J15)</b></title>
+  <body>
+    <p>A 60-pin local bus connector (J15) is provided on the carrier card to terminate all local bus
+      signals for future system expansion purpose.</p>
+  </body>
+</topic>

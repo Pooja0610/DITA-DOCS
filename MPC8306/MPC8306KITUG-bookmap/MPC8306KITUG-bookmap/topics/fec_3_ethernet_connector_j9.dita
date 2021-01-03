@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ed4_mkq_c4b">
+  <title><b>FEC-3 Ethernet Connector J9</b></title>
+  <body>
+    <p>Carrier RJ-45 connector J9 is used to provide network connectivity to processor through FEC-3
+      in MCP8306.</p>
+  </body>
+</topic>

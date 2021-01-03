@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_ixr_pyw_24b">
+  <title>Create Reusable Component</title>
+  <body>
+    <p>Opens a dialog box that helps you to create a reusable component from the current element or
+      selection of elements. If the Replace selection with content reference option is selected in
+      the dialog box, the selection will be replaced with a content reference (@conref). If multiple
+      elements are selected (for example, multiple steps or list items), the selection will be
+      replaced with a content reference range (@conref and @conrefend). For more information, see
+        <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-creating-reusable-content.html#eppo-creating-reusable-content"
+        format="html" scope="external">Creating a Reusable Content Component</xref>.</p>
+  </body>
+</topic>

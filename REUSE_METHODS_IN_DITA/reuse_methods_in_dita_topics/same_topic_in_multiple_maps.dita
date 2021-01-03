@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_uwh_qw4_24b">
+  <title>Reusing DITA Topics in Multiple Maps</title>
+  <body>
+    <p>You can reuse an entire DITA topic simply by referencing it in multiple maps (or <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-add-topic-to-map.html#eppo-add-topic-to-map__adding_multiple_references_to_the_same_topic_in_a"
+        format="html" scope="external">multiple locations within the same map</xref>) using one of
+      the following procedures:</p>
+    <p>Reuse Topics Using the DITA Maps Manager</p>
+    <ol id="ol_nb3_rw4_24b">
+      <li>Make sure the <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/glossary/ditamap.html"
+          format="html" scope="external">DITA map</xref> is opened in the <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-maps-manager.html#dita-maps-manager"
+          format="html" scope="external">DITA Maps Manager</xref>.</li>
+      <li>Add a reference to an existing topic by using one of the following methods (depending on
+        your particular situation):<ol id="ol_bd3_rw4_24b">
+          <li>If the topic already exists in this DITA map, do one of the following:<ul
+              id="ul_i23_rw4_24b">
+              <li>Simply drag the topic and press Ctrl (or Alt on OS X) at the new location within
+                the map (or use the Copy and Paste contextual menu actions).</li>
+              <li>If the topic is the currently open document in the main editor, determine the new
+                location in the map (in the <xref
+                  href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-maps-manager.html#dita-maps-manager"
+                  format="html" scope="external">DITA Maps Manager</xref>), right-click a parent or
+                sibling topic, and select Append Child &gt; Reference to the currently edited file
+                or Insert After &gt; Reference to the currently edited file.</li>
+            </ul></li>
+          <li>If the topic already exists in another DITA map, do one of the following:<ul
+              id="ul_af3_rw4_24b">
+              <li>Open the other map in the <xref
+                  href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-maps-manager.html#dita-maps-manager"
+                  format="html" scope="external">DITA Maps Manager</xref>, right-click the topic,
+                select Copy, switch back to the original DITA map in the DITA Maps Manager,
+                determine the new location in the map, right-click a parent or sibling topic, and
+                use one of the Paste contextual menu actions (Paste, Paste Before, or Paste
+                After).</li>
+              <li>If the topic is the currently open document in the main editor, determine the new
+                location in the map (in the <xref
+                  href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-maps-manager.html#dita-maps-manager"
+                  format="html" scope="external">DITA Maps Manager</xref>), right-click a parent or
+                sibling topic, and select Append Child &gt; Reference to the currently edited file
+                or Insert After &gt; Reference to the currently edited file.</li>
+            </ul></li>
+          <li>If the topic exists in the project, but has not yet been added to a DITA map, do one
+            of the following:<ul id="ul_bg3_rw4_24b">
+              <li>Right-click the topic in the <xref
+                  href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/using-the-project-view.html#using-the-project-view"
+                  format="html" scope="external">Project view</xref> (or the file system), select
+                Copy, switch to the <xref
+                  href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-maps-manager.html#dita-maps-manager"
+                  format="html" scope="external">DITA Maps Manager</xref> view, determine the new
+                location in the map, right-click a parent or sibling topic, and use one of the Paste
+                contextual menu actions (Paste, Paste Before, or Paste After).</li>
+              <li>If the topic is the currently open document in the main editor, determine the new
+                location in the map (in the <xref
+                  href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-maps-manager.html#dita-maps-manager"
+                  format="html" scope="external">DITA Maps Manager</xref>), right-click a parent or
+                sibling topic, and select Append Child &gt; Reference to the currently edited file
+                or Insert After &gt; Reference to the currently edited file.</li>
+            </ul></li>
+        </ol></li>
+      <li>If your topic uses a <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-background-keys.html#eppo-background-keys"
+          format="html" scope="external">key reference</xref>, set up the appropriate <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/insert-define-keys.html#insert-define-keys"
+          format="html" scope="external">key definition in your map</xref>.</li>
+      <li>If you want to define relationships between topics, other than those defined in the topics
+        themselves, you can <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-relationship-table-linking.html"
+          format="html" scope="external">add a relationship table to your map</xref>.</li>
+      <li>When you have finished adding topics, check that your map is complete and that all topic
+        links and keys resolve correctly. To do this <xref
+          href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-map-validate.html"
+          format="html" scope="external">validation, click the Validate and Check for Completeness
+          action</xref> on the toolbar in the DITA Maps Manager.</li>
+    </ol>
+  </body>
+</topic>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_xxs_3qw_24b">
+  <title>Reusing Content with DITA 1.3 Concepts</title>
+  <body>
+    <p>DITA 1.3 allows you to use some advanced concepts to expand content reuse possibilities even
+      further. <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-keyscopes.html"
+        format="html" scope="external"><i>Key Scopes</i> (or scoped keys)</xref> allow you to reuse
+      topics with variable content depending on the particular context and it maximizes reuse
+      possibilities for keys. <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-branch-filtering.html"
+        format="html" scope="external"><i>Branch Filtering</i></xref> allows you to reuse the same
+      content that is profiled in multiple ways within the same publication, each time using a
+      different filter.</p>
+    <p></p>
+  </body>
+</topic>

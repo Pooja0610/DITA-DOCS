@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_mjc_5ck_c4b">
+  <title>Specifications</title>
+  <body>
+    <p>The following table lists the specifications of MPC8306KIT</p>
+    <p><b>Table 2. MPC8306KIT Specifications</b></p>
+    <table id="table_yvw_5ck_c4b" rowsep="1" colsep="1">
+      <tgroup cols="2">
+        <colspec colname="c2"/>
+        <colspec colname="c4"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom">
+              <p><b>Characteristics</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Specifications</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>Power Requirement</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="right" valign="bottom"/>
+            <entry valign="bottom">
+              <p>SOM stand-alone 5VDC@1A</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>12 VDC @ 2.5A</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>Communication Processor</p>
+            </entry>
+            <entry valign="bottom">
+              <p>MPC8306 running @ 266 MHz</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>Addressing: Total address range</p>
+            </entry>
+            <entry valign="bottom">
+              <p>4 GByte (32 address lines)</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>Flash memory (local bus)</p>
+            </entry>
+            <entry valign="bottom">
+              <p>8 Byte with one chip-select</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>DDR2 SDRAM</p>
+            </entry>
+            <entry valign="bottom">
+              <p>128 MByte DDR2 SDRAM</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>Operating temperature</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>MPC8306SOM -40 °C to +85 °C</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="right" valign="bottom"/>
+            <entry valign="bottom">
+              <p>MPC830X_Carrier 0 °C to +70 °C</p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p id="page7"><b>Board Level Functions</b></p>
+    <p><b>Table 2. MPC8306KIT Specifications (continued)</b></p>
+    <table id="table_nyw_5ck_c4b" colsep="1" rowsep="1">
+      <tgroup cols="2">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom">
+              <p><b>Characteristics</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Specifications</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>Storage Temperature</p>
+            </entry>
+            <entry valign="bottom">
+              <p>-40 °C to +125 °C</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>Relative Humidity</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p>PCB dimensions:</p>
+    <p>SOM Board (LxWxT)90 mm x 70 mm x 1.63 mm</p>
+    <p>Carrier Board (LxWxT)170 mm x 170 mm x 1.63 mm</p>
+  </body>
+</topic>

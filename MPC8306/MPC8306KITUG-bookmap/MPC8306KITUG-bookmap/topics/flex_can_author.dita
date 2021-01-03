@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_yy5_rcq_c4b">
+  <title>Flex CAN Interface</title>
+  <body>
+    <p>MPC8306 is having four FlexCAN bus controller—CAN0 to CAN3. These CAN signals are brought to
+      carrier card through board-to-board connector.</p>
+    <p>CAN0 port is connected to CAN PHY (MCZ33902) on carrier card and then terminated on a 4-pin
+      header, while other CAN signals are terminated on test points on carrier card.</p>
+    <p><image href="../MPC8306KITUG_files/image56.jpeg" height="231" width="468" alt="???"
+        id="image_obd_scq_c4b"/></p>
+    <p><b>Figure 20. CAN BUS Interface</b></p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page21"><b>Board Level Functions</b></p>
+    <p>MPC8306 CAN signals are multiplexed with SDIO interface; so SN74CBTLV3257 - 4:1 mux/demux IC
+      is used for selection of interface. Thus, either CAN or SDIO interface is used at a time
+      through software switch selection.</p>
+  </body>
+</topic>

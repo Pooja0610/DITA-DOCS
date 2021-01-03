@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_k5z_hbq_c4b">
+  <title>USB Interface</title>
+  <body>
+    <p><b>USB Interface</b></p>
+    <p>MPC8306 supports USB2.0 host/device/OTG interface through external USB ULPI PHY. As shown in
+      the following figure, USB signals from the MPC8306 SOM go to the carrier card through the
+      board-to-board connector.</p>
+    <p>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</p>
+    <p>Board Level Functions</p>
+    <p>The USB connection on MPC8306KIT is shown in the following figure.</p>
+    <p><image href="../MPC8306KITUG_files/image45.jpeg" height="226" width="463" alt="???"
+        id="image_q53_3bq_c4b"/></p>
+    <p><b>Figure 15. USB Interface Block Diagram</b></p>
+    <p><b>NOTE</b></p>
+    <p>USB interface is multiplexed with TDM2 interface. This limitation is due to pin muxing of
+      8306SoC. So either USB or TDM2 (SLIC) interface can be used at a time. For configuration of
+      either USB or TDM2 (SLIC) interface, see LTIB documentation.</p>
+    <p></p>
+  </body>
+</topic>

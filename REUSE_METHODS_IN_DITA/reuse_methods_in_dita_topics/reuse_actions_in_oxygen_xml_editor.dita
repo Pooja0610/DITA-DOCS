@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_vg1_wvw_24b">
+  <title>Reuse Actions in Oxygen XML Editor</title>
+  <body>
+    <p>Oxygen XML Editor includes some actions that are specifically designed for DITA reusable
+      content. These actions are available in the contextual menu, the DITA menu, and some are
+      available on the toolbar.</p>
+    <p></p>
+  </body>
+</topic>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_yp5_txw_24b">
+  <title>Replace Reference with Content</title>
+  <body>
+    <p>Replaces the referenced fragment (@conref or @conkeyref) at the cursor position with its
+      content from it source. This action is useful if you want to make changes to the content in
+      the currently edited document without changing the referenced fragment in its source location.
+      If the source content includes references to other topics/resources (<i>hrefs</i>), the
+      operation also resolves those references relative to the new location. Attributes are
+      preserved according to the following priority:<ol id="ol_lzd_5xw_24b">
+        <li>Attributes from the elements in the current document that reference other content are
+          preserved except for attributes with a -dita-use-conref-target value.</li>
+        <li>Attributes from the referenced content are brought into the replaced elements in the
+          current document except for @id attributes.</li>
+      </ol></p>
+  </body>
+</topic>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_shq_lcq_c4b">
+  <title>DUART Interface</title>
+  <body>
+    <p>DUART provides support for RS232 and RS485 connectivity. UART1 is used for RS232 signaling
+      and UART2 is for RS485 signaling.</p>
+    <p>MAX3221, RS232 Transceiver, is used to provide RS232 connectivity on UART-1 port. UART-2 port
+      is used to provide RS485 connectivity through SN65HVD33D—a RS485 driver/receiver. UART2 port
+      is muxed with CS#4 and CS#5 of local bus,so multiplex switch is used for selection of
+      interface. By default, UART-2 port is selected.</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p>Board Level Functions</p>
+    <p><image href="../MPC8306KITUG_files/image55.jpeg" height="279" width="446" alt="???"
+        id="image_ywv_lcq_c4b"/></p>
+    <p><b>Figure 19. DUART Interface Block Diagram</b></p>
+    <p>UART1 (RS232) is terminated on SOM (3-pin header) and carrier card (DB9 connector). RS232
+      port is used as Debug/Console port for processor and is configured at 115200 baud rate.</p>
+    <p>Carrier card has dual-stacked DB9 connector. Upper port provides RS232 connectivity and lower
+      port RS485 connectivity.</p>
+  </body>
+</topic>

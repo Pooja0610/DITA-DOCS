@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_mnz_r4q_c4b">
+  <title><b>8306SOM Jumper Settings</b></title>
+  <body>
+    <p><xref href="#topic_mnz_r4q_c4b/fig_z5g_lb2_d4b" format="dita">8306SOM Top View</xref>and
+        xref<xref href="#topic_mnz_r4q_c4b/fig_wpc_bc2_d4b" format="dita">8306SOM Bottom view</xref>
+      of MPC8306SOM with each connector Pin-1 marked for reference. There is one jumper setting at
+      the top side and two at bottom side required for functional operation. DIP switches are NOT
+      used on the board.</p>
+    <p>
+      <fig id="fig_z5g_lb2_d4b">
+        <title>8306SOM Top View</title>
+        <image href="../MPC8306KITUG_files/image102.jpeg" height="326" width="425" alt="???"
+          id="image_qc2_s4q_c4b"/>
+      </fig>
+    </p>
+    <p><b>Table 20. Default Jumper Settings on Top</b></p>
+    <p><b>Reference</b>
+      <b>Description</b></p>
+    <p>J3 Short link jumper between Pin 3-1 and 4-6</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p><b>Getting Started</b></p>
+    <p>
+      <fig id="fig_wpc_bc2_d4b">
+        <title>8306SOM Bottom view</title>
+        <image href="../MPC8306KITUG_files/image105.jpeg" height="362" width="467" alt="???"
+          id="image_q22_s4q_c4b"/>
+      </fig>
+    </p>
+    <p><b>Table 21. Default Jumper Settings on Bottom</b></p>
+    <table id="table_z22_s4q_c4b" colsep="1" rowsep="1">
+      <tgroup cols="2">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <tbody valign="top">
+          <row>
+            <entry align="center" valign="bottom">
+              <p><b>Reference</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>DPR1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Short pin 2-3</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>DPR2</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Short pin 2-3</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p><b>NOTE</b></p>
+    <p>DPR—This is a 3-pad component footprint that provides options to mount/short link jumper on
+      two adjacentpads. By connecting two pads, one of the two options can be selected as shown in
+      the following figure.</p>
+    <p><image href="../MPC8306KITUG_files/image106.jpeg" height="190" width="508" alt="???"
+        id="image_xf2_s4q_c4b"/></p>
+    <p><b>Figure 37. DPR1 and DPR2 Settings</b></p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+  </body>
+</topic>

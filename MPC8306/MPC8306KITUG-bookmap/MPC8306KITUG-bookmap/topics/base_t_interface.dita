@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_hgp_pbq_c4b">
+  <title>FEC 10/100 Base-T Interface</title>
+  <body>
+    <p>MPC8306 have three fast Ethernet controller named as FEC1, FEC2, and FEC3. The details of
+      FEC-1,</p>
+    <p>FEC-2, and FEC-3 port are:</p>
+    <ul id="ul_h35_pbq_c4b">
+      <li>FEC-1 port is interfaced on SOM board working in MII mode</li>
+      <li>FEC-2 port is interfaced to 5-port Ethernet switch on carrier board through board-to-board
+        connector</li>
+      <li>FEC-3 port is interfaced to 10/100Mbps PHY (MII Mode) on carrier board through
+        board-to-board connector</li>
+    </ul>
+    <p></p>
+  </body>
+</topic>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_svn_gpq_c4b">
+  <title><b>External Cable Connection</b></title>
+  <body>
+    <p>Do not turn on power until all cables are connected and the serial port is configured as
+      described in “Serial Port Configuration (On PC).” Connect the serial port of the MPC8306_RDB
+      system and the personal computer using an RS-232 cable.</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+  </body>
+</topic>

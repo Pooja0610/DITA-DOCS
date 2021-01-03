@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_l4g_5bq_c4b">
+  <title>FEC1 Interface</title>
+  <body>
+    <p>The FEC1 port is used to provide network connectivity and allow data transfer over Ethernet
+      on MPC8306SOM board. The external PHY KSZ8001 is connected to MPC8306 FEC1 port through MII
+      interface. FEC1 controls the flow of data packet from the system to external PHY. The MDIO
+      (management data input/output) module controls PHY configuration and status monitoring as
+      shown in the following figure. The PHY address connected to FEC1 is 0x11.</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page18"><b>Board Level Functions</b></p>
+    <p><image href="../MPC8306KITUG_files/image48.jpeg" height="149" width="465" alt="???"
+        id="image_j5m_5bq_c4b"/></p>
+    <p><b>Figure 16. FEC1 Interface Block Diagram</b></p>
+  </body>
+</topic>

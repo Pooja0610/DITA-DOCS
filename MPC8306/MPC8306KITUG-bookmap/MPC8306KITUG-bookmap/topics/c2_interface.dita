@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_k2m_2lk_c4b">
+  <title>C2 Interfaces</title>
+  <body>
+    <p>I<sup>2</sup>C2 is connected to the following devices:</p>
+    <ul id="ul_ysw_plk_c4b">
+      <li>I/O expander—1 PCA9534DW at address 0x20</li>
+      <li>I/O expander—2 PCA9534DW at address 0x21</li>
+    </ul>
+    <p><image href="../MPC8306KITUG_files/image37.jpeg" height="276" width="408" alt="???"
+        id="image_oxw_plk_c4b"/></p>
+    <p><b>Figure 12. I</b><sup><b>2</b></sup><b>C2 Interface Block Diagram</b></p>
+    <p>I<sup>2</sup>C2 is used for an 8-bit I/O expander PCA9534DW on carrier card. PCA9534DW is
+      8-bit I<sup>2</sup>C to parallel port expander. PCA9534DW provides GPIO expansion for most
+      microcontroller families via the I<sup>2</sup>C interface [serial clock (SCL), serial data
+      (SDA)]. There are two I/O expanders on carrier card providing a total 16-bit GPIO.</p>
+    <p><b>Table 4. I2C I/O Expander-Based GPIO Signal Assignment on Carrier and SOM Card</b></p>
+    <table id="table_e1x_plk_c4b">
+      <tgroup cols="5">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <colspec colname="c5"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>I/O Port</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Signal Name</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c3" nameend="c4" align="center" valign="bottom">
+              <p><b>SOM Board GPIO</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c3" nameend="c4" valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c3" nameend="c4" align="center" valign="bottom">
+              <p><b>I/O Expander (PCA9536) U24 GPIO</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>IO0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>CAN/SD_MUX_CTL</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CAN and SDIO signals Mux/demux Selections</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>IO1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>UART / LBC_MUX_CTL</p>
+            </entry>
+            <entry valign="bottom">
+              <p>UART and LBC chip select signals mux/demux</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>selections</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>IO2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>BOOT_STAUS_GPIO</p>
+            </entry>
+            <entry valign="bottom">
+              <p>GPIO for checking processor boot status</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>IO3</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>CARRIER_PRESENT</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Detect stand-alone/carrier card availability</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c3" nameend="c4" align="center" valign="bottom">
+              <p><b>Carrier Board GPIO</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c3" nameend="c5" align="center" valign="bottom">
+              <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="right" valign="bottom">
+              <p>14</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c4" nameend="c5" valign="bottom">
+              <p>Freescale Semiconductor</p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p id="page15"><b><ph><image href="../MPC8306KITUG_files/image38.png" height="54" width="753"
+            alt="???" id="image_o2x_plk_c4b"/></ph>Board Level Functions</b></p>
+    <p><b>Table 4. I2C I/O Expander-Based GPIO Signal Assignment on Carrier and SOM Card
+        (continued)</b></p>
+    <table id="table_jfx_plk_c4b">
+      <tgroup cols="3">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <tbody valign="top">
+          <row>
+            <entry align="center" valign="bottom">
+              <p><b>I/O Port</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Signal Name</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry namest="c2" nameend="c3" valign="bottom">
+              <p><b>I/O Expander-1 (U21) GPIO</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>MPC_SLIC_SPI_CS#</p>
+            </entry>
+            <entry valign="bottom">
+              <p>SLIC SPI chip select</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>MPC_EEPROM_SPI_CS#</p>
+            </entry>
+            <entry valign="bottom">
+              <p>SPI EEPROM chip select (unused)</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>SPI_MUX_CNTL</p>
+            </entry>
+            <entry valign="bottom">
+              <p>SPI EEPROM and MPC8306 SPI mux selection</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>(unused)</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P3</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>FEC3_IEEE1588_MUX_CNTL</p>
+            </entry>
+            <entry valign="bottom">
+              <p>FEC3 and IEEE1588 mux/demux control</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P4</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>PCIe_WAKE#</p>
+            </entry>
+            <entry valign="bottom">
+              <p>PCIe card wake signal</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P5</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>MPC_GPIO_CAN_EN</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CAN transceiver control</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P6</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>MPC_GPIO_CAN_STY#</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CAN transceiver control</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P7</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>MPC_GPIO_CAN_ERR#</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CAN transceiver control</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry namest="c2" nameend="c3" valign="bottom">
+              <p><b>I/O Expander-2 (U39) GPIO</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>SW_UPDATE_RST#</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Switch software update signal (unused)</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>I<sup>2</sup>C_EXPND_GPIO1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Terminated on LED D9</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>I<sup>2</sup>C_EXPND_GPIO2</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Terminated on LED D10</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P3</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>I<sup>2</sup>C_EXPND_GPIO3</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Terminated on LED D11</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P4</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>I<sup>2</sup>C_EXPND_GPIO4</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Terminated on LED D12</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P5</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>I<sup>2</sup>C_EXPND_GPIO5</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Terminated on LED D8</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P6</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>USB_SLIC SEL</p>
+            </entry>
+            <entry valign="bottom">
+              <p>USB and SLIC mux/demux selections</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>P7</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>I<sup>2</sup>C_EXPND_GPIO7</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Terminated on header J17</p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p></p>
+  </body>
+</topic>

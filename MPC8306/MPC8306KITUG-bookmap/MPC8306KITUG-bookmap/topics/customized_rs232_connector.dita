@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_bq5_mgq_c4b">
+  <title><b>Customized RS232 Connector (J6)</b></title>
+  <body>
+    <p>MPC8306 SOM board has RS232 customized cable todebug MPC8306 SOM in stand-alone mode. Pinout
+      detail of the customized RS232 connector is mentioned in <xref
+        href="#topic_bq5_mgq_c4b/table_lmz_mgq_c4b" format="dita"/> .</p>
+    <p><image href="../MPC8306KITUG_files/image73.jpeg" height="99" width="91" alt="???"
+        id="image_tlz_mgq_c4b"/></p>
+    <p><b>Figure 27. Customized UART Connector</b></p>
+    <p><b>Table 10. Customized UART Serial Connector Pin Assignment</b></p>
+    <table id="table_lmz_mgq_c4b" colsep="1" rowsep="1">
+      <title>Customized UART Serial Connector Pin Assignment</title>
+      <tgroup cols="5">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <colspec colname="c5"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>Pin#</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>GND</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>Ground</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>TX</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>Transmit</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p id="page27"><b>Connectors, Switches, and LEDs</b></p>
+    <p><b>Table 10. Customized UART Serial Connector Pin Assignment (continued)</b></p>
+    <table id="table_w4z_mgq_c4b" rowsep="1" colsep="1">
+      <tgroup cols="3">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <tbody valign="top">
+          <row>
+            <entry align="center" valign="bottom">
+              <p><b>Pin#</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry align="right" valign="bottom">
+              <p>3</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>RX</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>Receiver</p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

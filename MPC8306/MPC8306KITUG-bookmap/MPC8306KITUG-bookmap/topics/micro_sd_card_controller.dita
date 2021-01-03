@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_tsy_3gq_c4b">
+  <title><b>Micro SD Card Connector</b></title>
+  <body>
+    <p>The microSD card socket (J5) for SD memory card installation is located near to the
+      customized UART connector of the board. The following figure shows how to insert SD card to
+      the board.</p>
+    <p><image href="../MPC8306KITUG_files/image72.jpeg" height="158" width="255" alt="???"
+        id="image_ttc_jgq_c4b"/></p>
+    <p><b>Figure 26. Insertion of SD Memory Card to the Board</b></p>
+  </body>
+</topic>

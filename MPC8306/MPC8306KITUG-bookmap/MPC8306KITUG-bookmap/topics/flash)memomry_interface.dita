@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_whb_2kk_c4b">
+  <title>NOR Flash Memory Interface</title>
+  <body>
+    <p>This section describes NOR Flash memory interface to MPC8306 local bus. Through the
+      general-purpose chip-select machine (GPCM), the MPC8306 SOM provides an 8 MByte of Flash
+      memory using a</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page12"><b>Board Level Functions</b></p>
+    <p>chip-select and local bus control signals. Local bus address and data are multiplexed, so a
+      address latch and a data buffer is used between MPC8306 and NOR Flash interface.</p>
+    <p><image href="../MPC8306KITUG_files/image29.jpeg" height="165" width="459" alt="???"
+        id="image_jgn_fkk_c4b"/></p>
+    <p><b>Figure 8. NOR Flash Interface Block Diagram</b></p>
+    <p><b>NOTE</b></p>
+    <p>NOR_CS# can be either CS0# or CS1# by J3 header–jumper settings; default is CS0#.</p>
+  </body>
+</topic>

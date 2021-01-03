@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_erc_1hq_c4b">
+  <title><b>NAND/NOR Chip Select Header (J3)</b></title>
+  <body>
+    <p>A six-pin SMD header (J3) is mounted on SOM to select the CS#0:1 for NOR/NAND Flash using
+      two-pin short link jumper.</p>
+    <p><image href="../MPC8306KITUG_files/image75.jpeg" height="75" width="193" alt="???"
+        id="image_g1h_1hq_c4b"/></p>
+    <p><b>Figure 28. NAND_NOR Chip selects Header</b></p>
+    <p>Header J3 is used to select the chip select for NAND and NOR device using two-pin short link
+      jumper as per the following table.</p>
+    <p><b>Table 11. Jumper Settings for NAND and NOR Device</b></p>
+    <table id="table_v1h_1hq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <tbody valign="top">
+          <row>
+            <entry align="center" valign="bottom">
+              <p><b>Sl. No</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Shorting</b></p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>J3.3 and J3.1</p>
+            </entry>
+            <entry align="right" valign="bottom">
+              <p>8306</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CS0 is connected to NOR chip select</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>J3.3 and J3.5</p>
+            </entry>
+            <entry align="right" valign="bottom">
+              <p>8306</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CS0 is connected to NAND chip select</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>3</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>J3.4 and J3.2</p>
+            </entry>
+            <entry align="right" valign="bottom">
+              <p>8306</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CS1 is connected to NOR chip select</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>J3.4 and J3.6</p>
+            </entry>
+            <entry align="right" valign="bottom">
+              <p>8306</p>
+            </entry>
+            <entry valign="bottom">
+              <p>CS1 is connected to NAND chip select</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p><b>NOTE</b></p>
+    <p>While configuring NOR on CS0, connect NAND chip select to CS1 and vice versa.</p>
+  </body>
+</topic>

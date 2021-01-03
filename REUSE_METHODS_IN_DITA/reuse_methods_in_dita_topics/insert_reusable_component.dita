@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_cf2_5yw_24b">
+  <title>Insert Reusable Component</title>
+  <body>
+    <p>Inserts a reusable component at cursor location. For more information, see <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-reuse-content.html#eppo-reuse-content"
+        format="html" scope="external">Inserting a Reusable Content Component</xref>.</p>
+  </body>
+</topic>

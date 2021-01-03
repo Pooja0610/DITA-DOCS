@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_hys_gdq_c4b">
+  <title><b>T1_E1 Clock Change</b></title>
+  <body>
+    <p>As mentioned in,” T1/E1 framer supports E1 mode by default. For T1 mode configuration, input
+      clock to framer needs to be changed to 1.544 MHz.</p>
+    <p>For changing framer input clock to 1.544 MHz, following changes need to be done:</p>
+    <ul id="ul_t4x_gdq_c4b">
+      <li>Top side: Make R137 as NU and mount R133</li>
+    </ul>
+    <p><image href="../MPC8306KITUG_files/image62.jpeg" height="196" width="371" alt="???"
+        id="image_v4x_gdq_c4b"/></p>
+    <p><b>Figure 22. T1_E1 Clock Mode Change Top Side</b></p>
+  </body>
+</topic>

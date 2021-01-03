@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_lp1_1cq_c4b">
+  <title>FEC2 Interface Block Diagram</title>
+  <body>
+    <p>The MDIO modules is used for switch configuration and status monitoring. The downlink of
+      switch is 4 10/100 ports terminated in 2x2 RJ-45 connector on carrier card through
+      magnetic.</p>
+    <p><b>NOTE</b></p>
+    <p>Switch registers are accessed through SMI interface of switch and MDC/MDIO interface of
+      MPC8306. Becauseof register addressing scheme of Ethernet switch over SMI interface, PHY
+      address range from 0x00 to 0x0F of MDC/MDIO interface is blocked. Hence any external PHY used
+      with this switch need to be addressed from 0x10 to 0x1F.</p>
+  </body>
+</topic>

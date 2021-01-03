@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qhr_tdq_c4b">
+  <title><b>Connectors, Switches, and LEDs</b></title>
+  <body>
+    <p>The following table summarizes the list of connectors, jumpers, switches, and LEDs that are
+      used in MPC8306KIT (SOM + Carrier) board.</p>
+    <table id="table_vfw_tdq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="3">
+        <colspec colname="c2"/>
+        <colspec colname="c4"/>
+        <colspec colname="c5"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom"/>
+            <entry namest="c4" nameend="c5" align="center" valign="bottom">
+              <p><b>Table 5. Connectors</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p><b>Reference</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>SOM Board Connectors</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>16-Pin JTAG connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J2</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Background debug connector for KA2 programming\</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J3</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Boot mode selection jumper for NAND and NOR</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J4</p>
+            </entry>
+            <entry valign="bottom">
+              <p>RJ-45 connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J5</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Micro SD card connector customize RS - 232 connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J6</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Customize RS - 232 connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J7</p>
+            </entry>
+            <entry valign="bottom">
+              <p>120-Pin board-to-board connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J9</p>
+            </entry>
+            <entry valign="bottom">
+              <p>2.5 mm power jack for 5 V supply</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J10</p>
+            </entry>
+            <entry valign="bottom">
+              <p>140-Pin board-to-board connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>Carrier Board Connectors</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Mini PCI Express connector (not used in MPC8306KIT)</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J2</p>
+            </entry>
+            <entry valign="bottom">
+              <p>PCI card edge connector (not used in MPC8306KIT)</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J3</p>
+            </entry>
+            <entry valign="bottom">
+              <p>MiniPCI card edge connector (not used in MPC8306KIT)</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J4</p>
+            </entry>
+            <entry valign="bottom">
+              <p>2x2 RJ-45 Ethernet switch connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J5</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Unshielded RJ-45 connector for T1/E1 line</p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table id="table_rnw_tdq_c4b" rowsep="1" colsep="1">
+      <tgroup cols="2">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p><b>Table 5. Connectors (continued)</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p><b>Reference</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J6</p>
+            </entry>
+            <entry valign="bottom">
+              <p>USB Mini AB connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J7</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Dual UART connector UART1(top), UART2(bottom)</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J9</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Shielded RJ-45 connector for FEC-3</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J10</p>
+            </entry>
+            <entry valign="bottom">
+              <p>4-Pin CAN header</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J11</p>
+            </entry>
+            <entry valign="bottom">
+              <p>RJ-11 phone jack connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J12</p>
+            </entry>
+            <entry valign="bottom">
+              <p>2.1mm power jack for 12 V supply</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J13</p>
+            </entry>
+            <entry valign="bottom">
+              <p>120-Pin board-to-board connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J14</p>
+            </entry>
+            <entry valign="bottom">
+              <p>140-Pin board-to-board connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J15</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Local bus connector</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J16</p>
+            </entry>
+            <entry valign="bottom">
+              <p>IEEE 1588 signal header-optional</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>J17</p>
+            </entry>
+            <entry valign="bottom">
+              <p>GPIO/SPI header</p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table id="table_hvw_tdq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="2">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>Table 6. Switches</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p><b>Reference</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>SOM Board Switches</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>SW1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>2-Pin Reset switch</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>Carrier Board Switches</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>S3</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reset switch</p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table id="table_odx_tdq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c3" nameend="c4" align="center" valign="bottom">
+              <p><b>Table 7. LEDs</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p><b>Reference</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>SOM Board LEDs</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>D13</p>
+            </entry>
+            <entry valign="bottom">
+              <p>5 V indicator LED</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>D14</p>
+            </entry>
+            <entry valign="bottom">
+              <p>3.3 V indicator LED</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>Carrier Board LEDs</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>D14</p>
+            </entry>
+            <entry valign="bottom">
+              <p>5 V indicator LED</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>D15</p>
+            </entry>
+            <entry valign="bottom">
+              <p>3.3 V indicator LED</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>D8</p>
+            </entry>
+            <entry valign="bottom">
+              <p>GPIO 5 LED</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>D9</p>
+            </entry>
+            <entry valign="bottom">
+              <p>GPIO 1 LED</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>D10</p>
+            </entry>
+            <entry valign="bottom">
+              <p>GPIO 2LED</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p id="page25"><b>Connectors, Switches, and LEDs</b></p>
+    <table id="table_hlx_tdq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="2">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p><b>Table 7. LEDs (continued)</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p><b>Reference</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>D11</p>
+            </entry>
+            <entry valign="bottom">
+              <p>GPIO 3LED</p>
+            </entry>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>D12</p>
+            </entry>
+            <entry valign="bottom">
+              <p>GPIO 4LED</p>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

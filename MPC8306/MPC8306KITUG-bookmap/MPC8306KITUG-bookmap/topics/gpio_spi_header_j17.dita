@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_gtw_dlq_c4b">
+  <title><b>GPIO/SPI Header (J17)</b></title>
+  <body>
+    <p>Header J17 consists of SPI signals for future expansion and some I<sup>2</sup>C I/O
+      expander–based GPIO for software verification purpose. The pinout of this connector is shown
+      in the following figure.</p>
+    <p><image href="../MPC8306KITUG_files/image85.jpeg" height="280" width="211" alt="???"
+        id="image_nv1_2lq_c4b"/></p>
+    <p><b>Figure 32. GPIO/SPI Header for expansion</b></p>
+  </body>
+</topic>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_mc2_fqw_24b">
+  <title>Reusing Content with Variables</title>
+  <body>
+    <p>DITA allows you to replace the content of certain elements with a value that is pointed to by
+      a key. This mechanism effectively means that you can <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-variables.html"
+        format="html" scope="external">create variables in your content</xref>, which you can then
+      create multiple outputs by changing the value that the key points to. This is done by
+      profiling the definition of the key value, or by substituting another map with a different key
+      value.</p>
+    <p></p>
+  </body>
+</topic>

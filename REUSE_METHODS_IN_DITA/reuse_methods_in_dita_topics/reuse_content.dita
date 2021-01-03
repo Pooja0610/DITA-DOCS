@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_vwd_bww_24b">
+  <title>Reuse Content</title>
+  <body>
+    <p>This action provides a mechanism for reusing content fragments.</p>
+    <p>It opens the <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/insert-dita-content-reference.html#insert-dita-content-reference"
+        format="html" scope="external">Reuse Content dialog box</xref> that allows you to insert
+      several types of references to reusable content at the cursor position. The types of
+      references that you can insert using this dialog box include content references (@conref),
+      content key references (@conkeyref), or key references to metadata (@keyref)</p>
+  </body>
+</topic>

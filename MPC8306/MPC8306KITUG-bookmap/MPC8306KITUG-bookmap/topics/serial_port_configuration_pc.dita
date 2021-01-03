@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_xrx_spq_c4b">
+  <title><b>Serial Port Configuration (On PC)</b></title>
+  <body>
+    <p>Before powering up the MPC8306 board, configure the serial port of the attached computer with
+      the following values:</p>
+    <ul id="ul_tnb_tpq_c4b">
+      <li>Data Rate: 115200 bps</li>
+      <li>Number of Data Bits: 8</li>
+      <li>Parity: None</li>
+    </ul>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page41"><b><ph/>MPC8306KIT Software</b></p>
+    <ul id="ul_q4b_tpq_c4b">
+      <li>Number of Stop Bits: 1</li>
+      <li>Flow Control: None</li>
+    </ul>
+  </body>
+</topic>

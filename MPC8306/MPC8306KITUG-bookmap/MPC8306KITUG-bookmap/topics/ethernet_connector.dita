@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_zkz_vgq_c4b">
+  <title><b>Ethernet Connector (J4)</b></title>
+  <body>
+    <p>MPC8306 SOM has Ethernet connector (J4) to provide network connectivity through FEC1 SOM
+      stand-alone SOM operation mode.</p>
+  </body>
+</topic>

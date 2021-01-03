@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_pxd_nww_24b">
+  <title>Push Current Element</title>
+  <body>
+    <p>Opens the <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/conref-push-mechanism.html#conref-push-mechanism"
+        format="html" scope="external">Push current element dialog box</xref> that allows content
+      from a source topic to be inserted into another topic without any special coding in the topic
+      where the content will be re-used.</p>
+  </body>
+</topic>

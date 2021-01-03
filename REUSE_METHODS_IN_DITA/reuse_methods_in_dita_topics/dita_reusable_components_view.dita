@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_nqw_4qw_24b">
+  <title>DITA Reusable Components View</title>
+  <body>
+    <p>If you use a large amount of keys or reusable components in your DITA project, the <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-reusable-components-view.html"
+        format="html" scope="external">DITA Reusable Components view</xref> can be quite helpful. It
+      collects all of the keys and reusable components that are defined in the <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/glossary/root-map_glossentry.html"
+        format="html" scope="external">root map</xref> and presents them in a dynamic table where
+      you can easily locate and insert references to them.</p>
+    <p></p>
+  </body>
+</topic>

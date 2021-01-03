@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_uwl_gw4_24b">
+  <title>Reusing Topics in DITA Maps</title>
+  <body>
+    <p>A DITA topic does not belong to any one publication. You add a DITA topic to a publication by
+      referencing it in a map. You can <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/eppo-reuse-topics.html"
+        format="html" scope="external">reference the same topic in multiple maps</xref>.</p>
+    <p/>
+  </body>
+</topic>

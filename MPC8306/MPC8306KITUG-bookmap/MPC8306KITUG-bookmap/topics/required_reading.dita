@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_twt_5y3_c4b">
+  <title>Required reading</title>
+  <body>
+    <p>When you finish reading this document, you should:</p>
+    <ul id="ul_kqs_vy3_c4b">
+      <li>be familiar with the board layout</li>
+      <li>understand the default board configuration and your board configuration option</li>
+      <li>know how to get started and boot the board</li>
+      <li>know about the software and further documentation that supports the board</li>
+    </ul>
+    <p><b>1 Required Reading</b></p>
+    <p>Use this manual in conjunction with following documents:</p>
+    <ul id="ul_vr3_dz3_c4b">
+      <li><i>MPC8306 PowerQUICC II Pro Integrated Communications Processor Family Reference Manual
+          (MPC8306RM)</i></li>
+      <li><i>MPC8306 PowerQUICC II Pro Processor Hardware Specifications (MPC8306EC)</i></li>
+      <li><i>Hardware and Layout Design Considerations for DDR Memory Interfaces (AN2582)</i></li>
+    </ul>
+    <note>
+      <p>This equipment has been tested and found to comply with the limits for a Class A digital
+        device, pursuant to part15 of the FCC rules. These limits are designed to provide reasonable
+        protection against harmful interference when the equipment is operated in a commercial
+        environment. This equipment generates, uses, and can radiate radio frequency energy and, if
+        not installed and used in accordance with the instruction manual, may cause harmful
+        interference to radio communications. Operation of this equipment in a residential area is
+        likely to cause harmful interference in which case the user will be required to correct the
+        interference at his own expense.</p>
+    </note>
+  </body>
+</topic>

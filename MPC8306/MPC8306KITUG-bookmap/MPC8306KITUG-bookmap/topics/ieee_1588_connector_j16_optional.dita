@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_zgl_vkq_c4b">
+  <title><b>IEEE 1588 Connector (J16)—Optional</b></title>
+  <body>
+    <p>An optional header (J4) is provided for IEEE 1588 signals connection. It is a dual-row,
+      16-pin (2 x 8) header connector. The pinout of this connector is shown in the following
+      figure.</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page30"><b>Connectors, Switches, and LEDs</b></p>
+    <p><image href="../MPC8306KITUG_files/image84.jpeg" height="280" width="317" alt="???"
+        id="image_rqp_vkq_c4b"/></p>
+    <p><b>Figure 31. IEEE1588 Header</b></p>
+  </body>
+</topic>

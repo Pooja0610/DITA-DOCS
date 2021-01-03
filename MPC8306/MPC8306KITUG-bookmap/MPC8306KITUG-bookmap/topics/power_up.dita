@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_v41_cqq_c4b">
+  <title><b>Power Up</b></title>
+  <body>
+    <p>The three-pin power jack (J12) on carrier card should be used to supply necessary DC power
+      when MPC8306KIT is powered up.</p>
+    <p><b>NOTE</b></p>
+    <p>The three-pin power jack (J9) should be used to supply power for MPC8306SOM stand-alone
+      operation only. Do not connect power to J9 while using SOM with carrier card.</p>
+    <p><b>Example 1.</b></p>
+    <p><tt>U-Boot 2010.06 (Dec 06 2010 - 10:11:06) MPC83XX Reset Status:</tt></p>
+    <p><tt>CPU: e300c3, MPC8306E, Rev: 1.0 at 266.667 MHz, CSB: 133.333 MHz</tt></p>
+    <p><tt>QE: 200 MHz</tt></p>
+    <p><tt>Board: Freescale MPC8306SOM Rev B</tt></p>
+    <p><tt>I</tt><sup><tt>2</tt></sup><tt>C:</tt>
+      <tt>ready</tt></p>
+    <p><tt>DRAM: 128 MB</tt></p>
+    <p><tt>FLASH: 8 MiB</tt></p>
+    <p><tt>Firmware 'Microcode version 0.0.0 for MPC8306 r1.0' for 8306 V1.0</tt></p>
+    <p><tt>QE: uploading microcode 'Microcode for MPC8306 r1.0'</tt></p>
+    <p><tt>NAND: 256 MiB</tt></p>
+    <p><tt>In:</tt>
+      <tt>serial</tt></p>
+    <p><tt>Out: serial</tt></p>
+    <p><tt>Err: serial</tt></p>
+    <p><tt>MMC: FSL_ESDHC: 0</tt></p>
+    <p><tt>Net: FSL UEC0, FSL UEC1, FSL UEC2</tt></p>
+    <p><tt>Hit any key to stop autoboot: 0</tt></p>
+  </body>
+</topic>

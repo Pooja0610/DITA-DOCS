@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_brw_1gq_c4b">
+  <title><b>Background Debug Connector for KA2</b></title>
+  <body>
+    <p>MPC8306 SOM has connector J2 used for KA2 microcontroller programming as shown in the
+      following figure.</p>
+    <p><image href="../MPC8306KITUG_files/image69.jpeg" height="138" width="284" alt="???"
+        id="image_hdb_bgq_c4b"/></p>
+    <p><b>Figure 25. KA2 Programming Header</b></p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page26"><b>Connectors, Switches, and LEDs</b></p>
+    <p>The following table shows KA2 programming header.</p>
+    <p><b>Table 9. Background Debug Connector Pin Detail</b></p>
+    <table id="table_bhb_bgq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="4">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <tbody valign="top">
+          <row>
+            <entry align="center" valign="bottom">
+              <p><b>Pin#</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Pin#</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>BKGD</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>GND</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>3</p>
+            </entry>
+            <entry valign="bottom">
+              <p>NC–1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>RESET</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>5</p>
+            </entry>
+            <entry valign="bottom">
+              <p>NC–2</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>6</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>VDD</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

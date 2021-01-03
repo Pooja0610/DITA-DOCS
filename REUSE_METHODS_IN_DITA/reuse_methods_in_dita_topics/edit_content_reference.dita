@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_hsd_hxw_24b">
+  <title>Edit Content Reference</title>
+  <body>
+    <p>This action is available for elements with a @conref or @conkeyref attribute. It opens the
+      Edit Content Reference dialog box that allows you to edit the source location (or key) and
+      source element of a content reference (or content key reference), and the reference details
+      (@conref/@conkeyref and @conrefend attributes). For more information, see Reuse Content Dialog
+      Box.</p>
+  </body>
+</topic>

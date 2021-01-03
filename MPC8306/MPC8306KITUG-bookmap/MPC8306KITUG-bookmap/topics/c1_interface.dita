@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_dsp_glk_c4b">
+  <title>C1 Interface</title>
+  <body>
+    <p>AS per MPC8306KIT specification, following components are interfaced on the
+      I<sup>2</sup>C1:</p>
+    <ul id="ul_rz5_glk_c4b">
+      <li>Serial EEPROM 24LC256-I/SM at address 0x50</li>
+      <li>4-Bit I<sup>2</sup>C I/O expander PCA9536 at address 0x41</li>
+      <li>MCU MC9S08QG8CDT on carrier card through board-to-board connector</li>
+      <li>DAC AD5301BRMZ at address 0x48 on carrier card through board-to-board connector</li>
+      <li>Temperature Sensor device LM75 is connected at 0x90 address.</li>
+    </ul>
+    <p>The following figure shows the interface block diagram.</p>
+    <p><image href="../MPC8306KITUG_files/image34.jpeg" height="150" width="323" alt="???"
+        id="image_j1v_glk_c4b"/></p>
+    <p><b>Figure 11. I</b><sup><b>2</b></sup><b>C1 Interface Block Diagram</b></p>
+    <p>The I<sup>2</sup>C EEPROM is used to store the configuration registers values and Booting
+      purpose during Boot Sequencer mode. Boot sequencer mode is selected at power-on reset by the
+      BOOTSEQ field of the high-order reset configuration word. If boot sequencer mode is selected,
+      the I<sup>2</sup>C module communicates with one or more EEPROMs through the I<sup>2</sup>C
+      interface.</p>
+    <p>I<sup>2</sup>C1 is also connected to the MC9S08QG8CDT on carrier card through board-to-board
+      connector.</p>
+    <p>MC9S08QG8CDT Microcontroller unit is used for the fan control.</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page14"><b>Board Level Functions</b></p>
+    <p>PCA9536 4-bit I/O expander on I<sup>2</sup>C1 line is used to provide on-board general
+      purpose I/O for mux/demux control and boot status GPIO.</p>
+    <p></p>
+  </body>
+</topic>

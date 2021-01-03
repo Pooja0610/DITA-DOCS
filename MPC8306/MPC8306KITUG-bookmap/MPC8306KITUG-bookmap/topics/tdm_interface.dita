@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_eyf_zcq_c4b">
+  <title>TDM Interface</title>
+  <body>
+    <p>MPC8306 is having two TDM/HDLC ports available. In MPC8306KIT, one TDM port (TDM-1) is
+      interfaced with T1/E1 transceiver (DS2155) and another TDM port (TDM-2) is interfaced with
+      SLIC codec as shown in the following figure.</p>
+    <p>
+      <fig id="fig_ws2_3sx_c4b">
+        <title>TDM Interface</title>
+        <image href="../MPC8306KITUG_files/image59.jpeg" height="290" width="465" alt="???"
+          id="image_gcl_zcq_c4b"/>
+      </fig>
+    </p>
+    <p>TDM-1 port of MPC8306 is interfaced with T1/E1 transceiver IC DS2155. It works either in T1
+      or in E1 mode as per external input clock and configuration. For E1 mode, DS2155 requires
+      2.048MHz clock and for T1 mode, a 1.544 MHz clock. Default operation of framer is E1 with
+      input clock to DS2155 at 2.048 MHz.</p>
+    <p><b>NOTE</b></p>
+    <p>For switching between T1 and E1 mode, that is, input clock change, a small hardware change is
+      required as mentioned in  T1 E1 Clock,</p>
+    <p>TDM-2 port of MPC8306 is interfaced with SLIC Codec IC Si3210. Line feeding IC Si3201 is also
+      required for analog telephone interface. Analog telephone interface requires a line voltage of
+      –48 V, which is being generated using line interface IC Si3201 and VBAT generator circuit as
+      shown in . As shown in the figure, TDM2 interface is multiplexed with USB interface. So either
+      USB or TDM2 (SLIC) interface<xref
+        href="reset_configurations.dita#topic_a3z_tfk_c4b/fig_yfl_sqx_c4b"/> can be used at a time.
+      The selection of interface can be done by I<sup>2</sup>C I/O expander. See LTIB documentation
+      for more information.</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page22"><b>Board Level Functions</b></p>
+  </body>
+</topic>

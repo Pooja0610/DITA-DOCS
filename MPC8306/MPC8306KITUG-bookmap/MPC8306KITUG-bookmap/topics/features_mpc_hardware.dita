@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_lcx_bdk_c4b">
+  <title>Features</title>
+  <body>
+    <ul id="ul_xcd_f2j_c4b">
+      <li>CPU: Freescale MPC8306 running at 266/133 MHz; CPU/coherent system bus (CSB)</li>
+      <li>Memory subsystem:<p>— 128 MByte unbuffered DDR2 SDRAM discrete devices</p><p>— 8 MByte NOR
+          Flash single chip memory</p><p>— 512 MByte NAND Flash memory</p><p>— 256-Kbit serial
+          EEPROM</p></li>
+      <li>Interfaces:<p>— 10/100 Base-T Ethernet ports:</p><p>– FEC1 MII and RMII: one 10/100 Base-T
+          RJ-45 interface using Micrel™ KSZ8001 10/100 Base-T PHY</p><p>– FEC2 MII: One 10/100
+          Base-T interfaced with 5-port switch (PSB6972) on carrier card</p><p>– FEC3 MII: One
+          10/100 Base-T interfaced using KSZ8001 10/100 Base-T PHY on carrier card</p><p>— USB 2.0
+          port:</p><p>– USB ULPI signals are interfaced with USB3300 PHY device on carrier
+          card</p><p>— eSDHC Port:</p><p>– One MicroSD card connector</p><p>— Dual UART
+          ports:</p><p>– UART1 supports up to 115200bps (RS232) terminated on 3-pin header on SOM
+          and DB9 connector on carrier card</p><p>– UART2 port converted in to RS-485 and terminated
+          on a DB9 connector on carrier card</p><p>— I<sup>2</sup>C</p><p>– I<sup>2</sup>C1:
+          Connected to Microchip™ 24LC256 Serial EEPROM</p><p>– I<sup>2</sup>C2: Connected to I/O
+          expander PCA9534 on carrier card</p><p>— Flex CAN module</p><p>– CAN: Interfaced with one
+          CAN transceiver (MCZ33902F) on carrier card</p></li>
+      <li>SOM board connectors:<p>— 3-Pin power jack connector</p><p>— 3-Pin UART header for
+          console</p><p>— JTAG/COP for debugging</p><p>— 120-pin and 140-pin board-to-board
+          connector</p><p>— 6-pin BDM header for KA2 programming</p><p>— RJ-45 for Ethernet
+          connectivity</p><p>— SD card connector</p><p>— 6-Pin header for boot device (NAND/NOR)
+          selection</p><ul id="ul_jzx_fck_c4b">
+          <li>Carrier board connectors:<p>— Mini PCIe (x1) card edge connector (not used in
+              MPC8306KIT)</p><p>— PCI card edge connector (not used in MPC8306KIT)</p><p>— Mini PCI
+              card edge connector (not used in MPC8306KIT)</p><p>— Dual stack DB9 connector for
+              RS-232 console and RS-485</p><p>— 2x2 RJ-45 connector for Ethernet switch</p><p>—
+              Unshielded RJ-45 connector for T1/E1</p><p>— MiniAB USB connector</p><p>—
+              Microcontroller UART header</p><p>— Microcontroller BDM header</p><p>— Shielded Rj-45
+              connector</p><p>— 4-Pin CAN header</p><p>— RJ-11 connector for SLIC/PSTN phone
+              Interface</p><p>— 60-Pin local bus connector on carrier for future expansion</p><p>—
+              120-Pin and 140-pin board-to-board connector</p><p>— 16-Pin SPI and IEEE 1588 header
+              on carrier for future expansion and measurement</p><p>— 16-Pin GPIO header</p></li>
+          <li>Form factor:<p>— SOM: 90 mm X 70 mm</p><p>— Carrier: 170 mm X 170 mm</p></li>
+          <li>6-Layer PCB(4-layer signals, 2-layer power and ground) routing</li>
+          <li>Certification<p>— FCC Class-A</p><p>— CE</p></li>
+          <li>Lead free (RoHS)</li>
+        </ul><p>The following figure shows the MPC8306SOM block diagram.</p><p><image
+            href="../MPC8306KITUG_files/image9.jpeg" height="479" width="618" alt="???"
+            id="image_y1y_fck_c4b"/></p>The following figure shows MPC830X carrier block
+            diagram.<p><image href="../MPC8306KITUG_files/image12.jpeg" height="454" width="531"
+            alt="???" id="image_ucy_fck_c4b"/></p></li>
+    </ul>
+  </body>
+</topic>

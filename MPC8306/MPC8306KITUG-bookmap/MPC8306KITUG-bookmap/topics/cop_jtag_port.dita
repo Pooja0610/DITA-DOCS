@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_xcd_ndq_c4b">
+  <title><b>COP/JTAG Port</b></title>
+  <body>
+    <p>The common on-chip processor (COP) is part of the MPC8306 JTAG module and is</p>
+    <p>implemented as a set of additional instructions and logic. This port can connect to a
+      Freescale JTAG emulator for extensive system debugging.</p>
+    <p>The setup of USB port JTAG emulator is shown in the following figure.</p>
+    <p><image href="../MPC8306KITUG_files/image63.jpeg" height="165" width="429" alt="???"
+        id="image_lwh_ndq_c4b"/></p>
+    <p><b>Figure 23. USB Port JTAG Emulator</b></p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page23"><b>Connectors, Switches, and LEDs</b></p>
+    <p>The 16-pin generic header connector carries the COP/JTAG signals and the additional signals
+      for system debugging. The pinout of this connector is shown in the following figure.</p>
+    <p><image href="../MPC8306KITUG_files/image66.jpeg" height="173" width="203" alt="???"
+        id="image_nxh_ndq_c4b"/></p>
+    <p><b>Figure 24. MPC8306SOM COP Connector</b></p>
+  </body>
+</topic>

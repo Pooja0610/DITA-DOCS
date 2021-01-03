@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_k2w_4kk_c4b">
+  <title>NAND Flash Memory Interface</title>
+  <body>
+    <p>This section describes NAND Flash memory interface to MPC8306. The MPC8306 has native support
+      for NAND Flash memory through its NAND flash control machine (FCM). eLBC interface of MPC8306
+      provides glueless interface to NAND Flash memory. MPC8306 supports 16-bit wide eLBC interface.
+      NAND Flash interface of SOM card is 8-bit wide.</p>
+    <p><image href="../MPC8306KITUG_files/image30.jpeg" height="138" width="465" alt="???"
+        id="image_w1b_pkk_c4b"/></p>
+    <p><b>Figure 9. NAND Flash Interface Block Diagram</b></p>
+    <p><b>NOTE</b></p>
+    <p>NAND_CS# can be either CS0# or CS1# by J3 header–jumper settings; default is CS1#.</p>
+  </body>
+</topic>

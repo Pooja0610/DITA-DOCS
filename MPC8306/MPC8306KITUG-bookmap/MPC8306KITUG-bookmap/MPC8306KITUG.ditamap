@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap
+  PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+  <title>MPC8306 Reference Manual</title>
+  <bookmeta>
+    <author>Windows User</author>
+    <critdates>
+      <created date="2020-12-25T10:07:00Z"/>
+      <revised modified="2020-12-25T10:07:00Z"/>
+    </critdates>
+  </bookmeta>
+  <frontmatter>
+    <notices href="topics/notices.dita"></notices>
+    <booklists>
+      <toc/>
+      <figurelist/>
+      <abbrevlist/>
+    </booklists>
+  </frontmatter>
+  <chapter href="topics/required_reading.dita"/>
+  <chapter href="topics/definitions_abbreviations.dita"/>
+  <chapter href="topics/mpc8306kit_hardware.dita">
+    <topicref href="topics/features_mpc_hardware.dita"/>
+    <topicref href="topics/Specifications_kit_hardware.dita"/>
+    <topicref href="topics/mechanical%20data.dita"/>
+  </chapter>
+  <chapter href="topics/board_level_functions.dita">
+    <topicref href="topics/reset_configurations.dita"/>
+    <topicref href="topics/external%20interrupts.dita"/>
+    <topicref href="topics/clock_distribution.dita"/>
+    <topicref href="topics/ddrm_controller.dita"/>
+    <topicref href="topics/local_bus_controller.dita">
+      <topicref href="topics/flash)memomry_interface.dita"/>
+      <topicref href="topics/nand_flash_memory_interface.dita"/>
+      <topicref href="topics/ds2155_parallel_port_interface.dita"/>
+    </topicref>
+    <topicref href="topics/Interfaces.dita">
+      <topicref href="topics/c1_interface.dita"/>
+      <topicref href="topics/interface%202.dita"/>
+    </topicref>
+    <topicref href="topics/spi_interface.dita"/>
+    <topicref href="topics/micro_sd_interface.dita"/>
+    <topicref href="topics/usb_interface.dita"/>
+    <topicref href="topics/base_t_interface.dita">
+      <topicref href="topics/feci_interface.dita"/>
+      <topicref href="topics/fec2_interface.dita"/>
+      <topicref href="topics/fec3_interface.dita"/>
+    </topicref>
+    <topicref href="topics/duart_interface.dita"/>
+    <topicref href="topics/flex_can_author.dita"/>
+    <topicref href="topics/tdm_interface.dita">
+      <topicref href="topics/t1_e1_clock_change.dita"/>
+    </topicref>
+    <topicref href="topics/cop_jtag_port.dita"/>
+  </chapter>
+  <chapter href="topics/connectors_switches_leds.dita">
+    <topicref href="topics/som_board_connectors.dita">
+      <topicref href="topics/cop_jtag_connector.dita"/>
+      <topicref href="topics/background_debug_connector_ka2.dita"/>
+      <topicref href="topics/micro_sd_card_controller.dita"/>
+      <topicref href="topics/customized_rs232_connector.dita"/>
+      <topicref href="topics/ethernet_connector.dita"/>
+      <topicref href="topics/nand_nor_chip_select_header.dita"/>
+    </topicref>
+    <topicref href="topics/carrier_board_connectors.dita">
+      <topicref href="topics/dual_uart_connector_j7.dita"/>
+      <topicref href="topics/can_header_j10.dita"/>
+      <topicref href="topics/rj11_phone_connector_j11.dita"/>
+      <topicref href="topics/t1_e1_connector_j5.dita"/>
+      <topicref href="topics/fec_3_ethernet_connector_j9.dita"/>
+      <topicref href="topics/ethernet_connector_j4.dita"/>
+      <topicref href="topics/ieee_1588_connector_j16_optional.dita"/>
+      <topicref href="topics/gpio_spi_header_j17.dita"/>
+      <topicref href="topics/local_bus_connector_j15.dita"/>
+    </topicref>
+  </chapter>
+  <chapter href="topics/mpc8306_kit_board_configuration.dita">
+    <topicref href="topics/reset_configuration_word.dita"/>
+    <topicref href="topics/power_supply.dita">
+      <topicref href="topics/mp8306kit_power_supply.dita"/>
+    </topicref>
+    <topicref href="topics/chip_select_assignments_memory_map.dita"/>
+  </chapter>
+  <chapter href="topics/getting_started.dita">
+    <topicref href="topics/board_jumping_settings.dita">
+      <topicref href="topics/8306som_jumper_settings.dita"/>
+      <topicref href="topics/mp8306kit_topview.dita"/>
+    </topicref>
+    <topicref href="topics/external_cable_connection.dita">
+      <topicref href="topics/mp8306kit_som_carrier_external_cable_connection.dita"/>
+      <topicref href="topics/mp8306_som_stand_alone_external_cable_connection.dita"/>
+    </topicref>
+    <topicref href="topics/serial_port_configuration_pc.dita"/>
+    <topicref href="topics/power_up.dita"/>
+  </chapter>
+  <chapter href="topics/mpc8306_software.dita"/>
+</bookmap>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_qms_v1q_c4b">
+  <title>SPI Interface</title>
+  <body>
+    <p>SPI interface is connected to following devices on MPC8306KIT:</p>
+    <ul id="ul_cwx_v1q_c4b">
+      <li>Boot SPI EEPROM Flash on SOM card</li>
+      <li>Si3210 SLIC on carrier card</li>
+    </ul>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page16">Board Level Functions</p>
+    <p>
+      <fig id="fig_oxb_krx_c4b">
+        <title>SPI Interface Block in MPC8306KIT</title>
+        <image href="../MPC8306KITUG_files/image41.jpeg" height="198" width="325" alt="???"
+          id="image_zyx_v1q_c4b"/>
+      </fig>
+    </p>
+    <p>The SPI EEPROM is used to store the configuration registers values for booting purpose.
+      During normal operation, the SPI EEPROM is not used.</p>
+    <p>Si3210 PROSLIC is being configured through SPI interface of MPC8306. Chip select of SLIC SPI
+      interface is generated through PCA954DW I/O expander on carrier card as shown in <xref
+        href="reset_configurations.dita#topic_a3z_tfk_c4b/fig_yfl_sqx_c4b"/>.</p>
+    <p></p>
+  </body>
+</topic>

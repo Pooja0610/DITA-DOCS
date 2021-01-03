@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_efz_pv4_24b">
+  <title>Introduction - Reusing DITA Content</title>
+  <body>
+    <p>Reusing content is one of the key features of DITA and DITA provides several methods for
+      reusing content. Oxygen XML Editor provides support for each of these methods.</p>
+    <p/>
+  </body>
+</topic>

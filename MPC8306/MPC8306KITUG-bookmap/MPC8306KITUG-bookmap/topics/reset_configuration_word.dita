@@ -1,0 +1,2364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_s1m_tlq_c4b">
+  <title><b>Reset Configuration Word</b></title>
+  <body>
+    <p>The reset configuration words control the clock ratios and other basic device functions such
+      as boot location and endian mode. The reset configuration words are loaded from NOR Flash,
+      NAND Flash, or the I<sup>2</sup>C interfaces or from hard-coded values during the power-on or
+      hard reset flows. The reset configuration word is divided intoreset configuration word low
+      register (RCWLR) and reset configuration word high register (RCWHR). The default RCW low bit
+      setting is 0x4404_0008. The default RCW high bit setting is 0x0006_0000. The RCW is located at
+      the lowest 64 bytes of the boot Flash memory, which is 0xFE00_0000 if the default memory map
+      is used.</p>
+    <p><b>Table 15. Default RCW in Flash Memory</b></p>
+    <p><b>Address</b></p>
+    <p>FE000000: 44444444 44444444 04040404 04040404</p>
+    <p>FE000010: 00000000 00000000 08080808 08080808</p>
+    <p>FE000020: 00000000 00000000 60606060 60606060</p>
+    <p>FE000030: 00000000 00000000 00000000 000000000</p>
+    <p>The RCW configurations are shown in the following two figures.</p>
+    <p><image href="../MPC8306KITUG_files/image88.jpeg" height="103" width="405" alt="???"
+        id="image_yjr_tlq_c4b"/></p>
+    <p><b>Figure 33. Reset Configuration Word Low Register (RCWLR)</b></p>
+    <p><image href="../MPC8306KITUG_files/image89.jpeg" height="113" width="408" alt="???"
+        id="image_nsr_tlq_c4b"/></p>
+    <p><b>Figure 34. Reset Configuration Word High Register (RCWHR)</b></p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b><b/></p>
+    <p><b>MPC8306KIT Board Configuration</b></p>
+    <p><b>Table 16. RCWLR Bit Descriptions</b></p>
+    <table id="table_pft_tlq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="7">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <colspec colname="c5"/>
+        <colspec colname="c6"/>
+        <colspec colname="c7"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom">
+              <p><b>Bits</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Meaning</b></p>
+            </entry>
+            <entry namest="c4" nameend="c5" align="center" valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c4" nameend="c6" valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>LBCM</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Local bus clock mode</p>
+            </entry>
+            <entry namest="c4" nameend="c6" align="center" valign="bottom">
+              <p>Local bus controller clock: CSB_CLK</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c4" nameend="c5" valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>0(Default)</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>Ratio 1:1</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>Ratio 2:1</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>DDRCM</p>
+            </entry>
+            <entry valign="bottom">
+              <p>DDR SDRAM clock</p>
+            </entry>
+            <entry namest="c4" nameend="c5" align="center" valign="bottom">
+              <p>DDR control clock: CSB_CLK</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>mode</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>0</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>Ratio 1:1</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>1(Default)</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>Ratio 2:1</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>2–3</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>SVCOD</p>
+            </entry>
+            <entry valign="bottom">
+              <p>System PLL VCO</p>
+            </entry>
+            <entry namest="c4" nameend="c5" align="center" valign="bottom">
+              <p>VCO division factor</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>division</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>00(Default)</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>01</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>10</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>11</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>4–7</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>SPMF[0-3]</p>
+            </entry>
+            <entry valign="bottom">
+              <p>System PLL</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>0000</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>multiplication factor</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>0001</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>0010</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>2:1</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>0011</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>3:1</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>0100</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>4:1</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>0101</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>5:1</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>0110</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>6:1</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>0110–0000</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>—</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry namest="c4" nameend="c5" align="center" valign="bottom">
+              <p>Must be cleared</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p id="page33"><b><ph/>MPC8306KIT Board Configuration</b></p>
+    <p><b>Table 16. RCWLR Bit Descriptions (continued)</b></p>
+    <table id="table_dk5_tlq_c4b" rowsep="1" colsep="1">
+      <tgroup cols="6">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <colspec colname="c5"/>
+        <colspec colname="c6"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom">
+              <p><b>Bits</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Meaning</b></p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>9–15</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>Core PLL[0-6]</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>Value</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>coreclk: csb_clk</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>VCO divider\</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>nn 0000 n</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>PLL Bypasses</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>PLL Bypasses</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00 0001 0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>1:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>01 00010</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>1:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>10 00010</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>1:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>11 00010</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>1:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00 0001 1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>1.5:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>01 0001 1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>1.5:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>10 0001 1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>1.5:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>11 0001 1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>1.5:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00 0010 0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>01 0010 0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>10 0010 0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>11 0010 0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00 0010 1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2.5:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>01 0010 1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2.5:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>10 0010 1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2.5:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>11 0010 1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2.5:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00 0011 0 (Default)</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>3:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>01 0011 0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>3:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>10 0011 0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>3:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>11 0011 0</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>3:1</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>16–23</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>Must be cleared</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <p><b>Table 16. RCWLR Bit Descriptions (continued)</b></p>
+    <table id="table_dkw_tlq_c4b" rowsep="1" colsep="1">
+      <tgroup cols="7">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <colspec colname="c5"/>
+        <colspec colname="c6"/>
+        <colspec colname="c7"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom">
+              <p><b>Bits</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Meaning</b></p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c4" nameend="c6" valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>24–25</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>CEVCOD</p>
+            </entry>
+            <entry valign="bottom">
+              <p>QUICC Engine PLL</p>
+            </entry>
+            <entry namest="c4" nameend="c6" align="center" valign="bottom">
+              <p>Establish internal ratio between QUICC Engine PCC VCO point and</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>VCO division</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry namest="c5" nameend="c6" align="center" valign="bottom">
+              <p>QUICC Engine PLL output.</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c5" nameend="c6" valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>01</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>10</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>11</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c4" nameend="c5" valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>26</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>CEPDF</p>
+            </entry>
+            <entry valign="bottom">
+              <p>QUICC Engine PLL</p>
+            </entry>
+            <entry namest="c4" nameend="c6" align="center" valign="bottom">
+              <p>Determine the ce_clk based on RCWHR[CEPMF]</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>division factor</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>0</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>ce_clk = primary clock input *CEPMF</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>ce_clk =( primary clock input *CEPMF)/2</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c4" nameend="c5" valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>27–31</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>CEPMF</p>
+            </entry>
+            <entry valign="bottom">
+              <p>QUICC Engine PLL</p>
+            </entry>
+            <entry namest="c4" nameend="c6" align="center" valign="bottom">
+              <p>Determine the ratio between ce_clk and primary clock input</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>multiplication factor</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>00000</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>Reserved, should be cleared</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00001</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>Reserved, should be cleared</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00010</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>2</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00011</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>3</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00100</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00101</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>5</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00110</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>6</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>00111</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>7</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>01000</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>010001-11111</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>Reserved, should be cleared</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p><b>Table 17. RCWHR Bit Descriptions</b></p>
+    <table id="table_jgx_tlq_c4b" colsep="1" rowsep="1">
+      <tgroup cols="5">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <colspec colname="c5"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom">
+              <p><b>Bits</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Meaning</b></p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>0–3</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>—</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Must be cleared</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>4</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>CORDIS</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Core disable mode</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>0 (Default)</p>
+            </entry>
+            <entry valign="bottom">
+              <p>e300 enabled</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>e300 disabled</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>5</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>BMS</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Boot memory space</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>0</p>
+            </entry>
+            <entry valign="bottom">
+              <p>0x0000_0000 - 0x007F_FFFF</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>0xFF80_0000 - 0xFFFF_FFFF</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide, Rev. 0</b></p>
+    <table id="page35" colsep="1" rowsep="1">
+      <tgroup cols="6">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <colspec colname="c5"/>
+        <colspec colname="c6"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p><b>MPC8306KIT Board Configuration</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry namest="c3" nameend="c5" valign="bottom">
+              <p><b>Table 17. RCWHR Bit Descriptions (continued)</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p><b>Bits</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Name</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Meaning</b></p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p><b>Description</b></p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>6–7</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>BOOTSEQ</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Boot sequencer</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>00(Default)</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Boot sequencer is disabled</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>configuration</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>01</p>
+            </entry>
+            <entry morerows="1" valign="bottom">
+              <p>Normal I<sup>2</sup>c addressing mode is used. Boot sequencer</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>load configuration from ROM on I<sup>2</sup>C interface</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>10</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Extended I<sup>2</sup>c addressing mode is used. Boot</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>sequencer load configuration from ROM on I<sup>2</sup>C</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>interface</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>11</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>SWEN</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Switch watchdog</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>0</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Disable</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>enable</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry morerows="1" valign="bottom">
+              <p>Enable</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>9–11</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>ROMLOC</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Boot ROM interface</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>000</p>
+            </entry>
+            <entry valign="bottom">
+              <p>DDR2 SDRM(if RCWH[RLEXT=00]) or reserved (if</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>location</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>RCWH[RLEXT=01])</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>001</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved (if RCWH[RLEXT=00]) or local bus NAND</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>Flash - 8 bit small page ROM (if RCWH[RLEXT=01])</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>010, 011, 110</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>101</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Local bus GPCM - 8 bit ROM</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>(if RCWH[RLEXT=00]) or</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>Local bus NAND Flash - 8 bit large page ROM (if</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom">
+              <p>RCWH[RLEXT=01])</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>110 (Default)</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Local bus GPCM,16 bits</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>111</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>12–13</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>RLEXT</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Boot ROM extension</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>00 (Default)</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Legacy mode</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" valign="bottom">
+              <p>location</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry morerows="1" align="center" valign="bottom">
+              <p>01</p>
+            </entry>
+            <entry morerows="1" valign="bottom">
+              <p>NAND flash mode</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>10, 11</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>14–15</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>—</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>Must be cleared</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>16–27</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>—</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>Must be cleared</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>28</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>TLE</p>
+            </entry>
+            <entry valign="bottom">
+              <p>True little endian</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>0 (Default)</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Big-endian mode</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>1</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Little-endian mode</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry align="center" valign="bottom">
+              <p>29–31</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>—</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Reserved</p>
+            </entry>
+            <entry valign="bottom"/>
+            <entry align="center" valign="bottom">
+              <p>Must be cleared</p>
+            </entry>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>

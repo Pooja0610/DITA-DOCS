@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_yns_byw_24b">
+  <title>Replace All References with Content</title>
+  <body>
+    <p>Replaces all referenced fragments (@keyref, @conref, or @conkeyref) in the current document
+      with the content. Attributes are preserved according to the following priority:Attributes from
+      the elements in the current document that reference other content are preserved except for
+      attributes with a -dita-use-conref-target value.Attributes from the referenced content are
+      brought into the replaced elements in the current document except for @id attributes.For
+      keyrefs inside &lt;xref> or &lt;link> elements, the @keyref attribute is changed to an @href
+      attribute, while the rest of the content for the keyref is replaced with its source content.If
+      the source content includes references to other topics/resources (hrefs), the operation also
+      resolves those references relative to the new location.</p>
+  </body>
+</topic>

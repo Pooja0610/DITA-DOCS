@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_lk3_yz4_24b">
+  <title>Displaying Multiple References to the Same Topics</title>
+  <body>
+    <p>Whenever multiple references to the same topic are detected in the context of the current map
+      in the <xref
+        href="https://www.oxygenxml.com/doc/versions/23.0/ug-editor/topics/dita-maps-manager.html#dita-maps-manager"
+        format="html" scope="external">DITA Maps Manager</xref>, an indicator will appear in the
+      top-right corner of the Author mode editor that shows the number of times the current topic is
+      referenced in the DITA map. It also includes navigation arrows that allow you to jump to the
+      next or previous reference in the DITA Maps Manager.</p>
+  </body>
+</topic>

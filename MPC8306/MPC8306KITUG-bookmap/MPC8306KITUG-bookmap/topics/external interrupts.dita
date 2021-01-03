@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_uxl_wgk_c4b">
+  <title>External Interrupts</title>
+  <body>
+    <p>The following figure shows the external interrupt circuitry of MPC8306KIT.</p>
+    <p><image href="../MPC8306KITUG_files/image20.jpeg" height="217" width="370" alt="???"
+        id="image_wtl_xgk_c4b"/></p>
+    <p><b>Figure 5. Interrupt Circuitry of MPC8306KIT</b></p>
+    <ul id="ul_d5l_xgk_c4b">
+      <li>All external interrupt signals are pulled up by 4.7 K resistors.</li>
+      <li>Either PHY (KSZ8001) Interrupt (FEC1_IRQ#) or FRMR_IRQ# will be connected to IRQ0# of
+        MPC8306. The selection between FEC1_IRQ# and FRMR_IRQ# can be done through resistor mount/No
+        mount. Default IRQ0 is connected to FRMR_IRQ#.</li>
+      <li>Option provided to connect SLIC and framer device interrupt (FRMR_IRQ#) to be ANDed and
+        given to IRQ1# of MPC8306. By default, only SLIC interrupt will be connected to IRQ1.</li>
+      <li>MCU Interrupt (MCU_IRQ# and thermal interrupt (THERM_IRQ#) are ANDed and given to IRQ3 of
+        MPC8306.</li>
+    </ul>
+  </body>
+</topic>

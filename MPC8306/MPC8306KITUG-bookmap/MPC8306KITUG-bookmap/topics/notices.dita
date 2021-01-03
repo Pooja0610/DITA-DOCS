@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_cyk_kx3_c4b">
+  <title>Notices</title>
+  <body>
+    <p><b><ph><image href="../MPC8306KITUG_files/image1.png" height="54" width="753" alt="???"
+            id="image_zhx_kx3_c4b"/></ph>Freescale Semiconductor </b>Hardware KIT User Guide</p>
+    <p>Document Number: MPC8306KITUG Rev. 0, 07/2011</p>
+    <p><b>PowerQUICC MPC8306KIT User’s Guide</b></p>
+    <p>The MPC8306KIT is a two-board system. The processor board (SOM) features the PowerQUICC
+      processor, MPC8306, and memory interfaces. The other board is called carrier card that
+      comprises external world interfaces terminated on connector/header.</p>
+    <p>This is a low-cost, high-performance system solution comprising printed circuit board (PCB)
+      assembly plus a software board support package (BSP) distributed in a CD image. This BSP
+      enables the fastest possible time-to-market for development or integration of applications
+      including telecom application, industrial control, networking and low-end embedded
+      application.</p>
+    <p>This document describes the hardware features of the board including specifications, block
+      diagram, connectors, interfaces, and hardware straps. It also describes the board settings and
+      physical connections needed to boot the MPC8306KIT. Finally, it considers the software shipped
+      with the platform.</p>
+    <p></p>
+  </body>
+</topic>

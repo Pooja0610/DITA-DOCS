@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_rt3_c4q_c4b">
+  <title><b>Chip-Select Assignments and Memory Map</b></title>
+  <body>
+    <p><b>Table 19. Example Memory Map, Local Access Window, and Chip-Select Assignments</b></p>
+    <table id="table_khn_c4q_c4b" colsep="1" rowsep="1">
+      <tgroup cols="5">
+        <colspec colname="c1"/>
+        <colspec colname="c2"/>
+        <colspec colname="c3"/>
+        <colspec colname="c4"/>
+        <colspec colname="c5"/>
+        <tbody valign="top">
+          <row>
+            <entry valign="bottom">
+              <p><b>Address Range</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Target Interface</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Chip select Line</b></p>
+            </entry>
+            <entry valign="bottom">
+              <p><b>Mapping size</b></p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p><b>Bit width</b></p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>0x00000000 to 0x08000000</p>
+            </entry>
+            <entry valign="bottom">
+              <p>DDR2</p>
+            </entry>
+            <entry valign="bottom">
+              <p>MCS0#</p>
+            </entry>
+            <entry valign="bottom">
+              <p>128 MB</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>16 bit</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom" colsep="1" rowsep="1"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>0xe0000000 to 0xe00fffff</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Internal bus</p>
+            </entry>
+            <entry valign="bottom">
+              <p>Nil</p>
+            </entry>
+            <entry valign="bottom">
+              <p>1 MB</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>—</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>0xFFF00000 to 0xFFF3FFFF</p>
+            </entry>
+            <entry valign="bottom">
+              <p>NAND controller</p>
+            </entry>
+            <entry valign="bottom">
+              <p>LCS1#</p>
+            </entry>
+            <entry valign="bottom">
+              <p>NAND Flash window 256 Kbyte</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>8</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+          <row>
+            <entry valign="bottom">
+              <p>0xfe000000 to 0xfe7fffff</p>
+            </entry>
+            <entry valign="bottom">
+              <p>NOR controller</p>
+            </entry>
+            <entry valign="bottom">
+              <p>LCS0#</p>
+            </entry>
+            <entry valign="bottom">
+              <p>NOR Flash window 8 MB</p>
+            </entry>
+            <entry align="center" valign="bottom">
+              <p>16</p>
+            </entry>
+          </row>
+          <row>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+            <entry valign="bottom"/>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </body>
+</topic>
